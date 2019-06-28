@@ -1,0 +1,33 @@
+{
+  "name": "foodiefront",
+  "version": "1.0.0",
+  "description": "Storefront child theme for Foodie Japan",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \\\"No test specified\\\"",
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/friendofdog/foodiefront.git"
+  },
+  "keywords": [
+    "theme"
+  ],
+  "author": "friendofdog",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/friendofdog/foodiefront/issues"
+  },
+  "homepage": "https://github.com/friendofdog/foodiefront#readme",
+  "devDependencies": {
+    "autoprefixer": "9.6.0",
+    "browser-sync": "2.26.7",
+    "gulp": "4.0.2",
+    "gulp-group-css-media-queries": "1.2.2",
+    "gulp-plumber": "1.2.1",
+    "gulp-postcss": "8.0.0",
+    "gulp-sass": "4.0.2",
+    "gulp-sass-lint": "1.4.0"
+  }
+}
