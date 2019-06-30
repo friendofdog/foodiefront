@@ -6,6 +6,7 @@ const autoprefixer = require('autoprefixer');
 const groupmq = require('gulp-group-css-media-queries');
 const sassLint = require('gulp-sass-lint');
 const bs = require('browser-sync');
+const bourbon = require('bourbon').includePaths;
 
 const SASS_SOURCES = [
   './*.scss', // This picks up our style.scss file at the root of the theme
@@ -31,6 +32,7 @@ gulp.task('compile:sass', gulp.series('lint:sass', () => {
     .pipe(sass({
       indentType: 'tab',
       indentWidth: 1,
+      includePaths: ['node_modules/susy/sass'].concat(bourbon),
       outputStyle: 'expanded', // Expanded so that our CSS is readable
     })).on('error', sass.logError)
     .pipe(postcss([

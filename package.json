@@ -22,12 +22,14 @@
   "homepage": "https://github.com/friendofdog/foodiefront#readme",
   "devDependencies": {
     "autoprefixer": "9.6.0",
+    "bourbon": "5.1.0",
     "browser-sync": "2.26.7",
     "gulp": "4.0.2",
     "gulp-group-css-media-queries": "1.2.2",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "8.0.0",
     "gulp-sass": "4.0.2",
-    "gulp-sass-lint": "1.4.0"
+    "gulp-sass-lint": "1.4.0",
+    "susy": "2.2.14"
   }
 }
