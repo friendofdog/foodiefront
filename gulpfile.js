@@ -5,12 +5,22 @@ const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const groupmq = require('gulp-group-css-media-queries');
 const sassLint = require('gulp-sass-lint');
+const eslint = require('gulp-eslint');
 const bs = require('browser-sync');
+const rename = require('gulp-rename');
+const concat = require('gulp-concat');
 const bourbon = require('bourbon').includePaths;
+const uglifyes = require('uglify-es');
+const composer = require('gulp-uglify/composer');
+const uglify = composer(uglifyes, console);
 
 const SASS_SOURCES = [
   './*.scss',
   'assets/css/sass/**/*.scss',
+];
+
+const JS_SOURCES = [
+  'assets/js/*.js'
 ];
 
 /**
@@ -26,6 +36,27 @@ gulp.task('lint:sass', () => {
     }))
     .pipe(plumber())
     .pipe(sassLint.format())
+});
+
+/**
+ * Lint JS
+ */
+gulp.task('lint:js', () => {
+  return gulp.src(JS_SOURCES)
+    .pipe(eslint({
+        rules: {
+          camelcase: 1
+        },
+        globals: [
+          'jQuery',
+          '$'
+        ],
+        envs: [
+          'es6',
+          'browser'
+        ]
+    }))
+    .pipe(eslint.formatEach('compact', process.stderr))
 });
 
 /**
@@ -52,18 +83,31 @@ gulp.task('compile:sass', gulp.series('lint:sass', () => {
 })); // Stream to browserSync
 
 /**
+ * Compile JS files
+ */
+gulp.task('compile:js', function () {
+  return gulp.src(JS_SOURCES)
+    .pipe(concat('scripts.js'))
+    .pipe(gulp.dest('./'))
+    .pipe(rename('scripts.min.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('./'))
+});
+
+/**
  * Start up browserSync and watch Sass files for changes
  */
-gulp.task('watch:sass', gulp.series('compile:sass', () => {
+gulp.task('watch', gulp.series('compile:sass', () => {
   bs.init({
     proxy: 'http://127.0.0.1:8080',
     port: 5000
   });
 
   gulp.watch(SASS_SOURCES, gulp.series(['compile:sass', 'lint:sass']));
+  gulp.watch(JS_SOURCES, gulp.series(['compile:js', 'lint:js']));
 }));
 
 /**
  * Default task executed by running `gulp`
  */
-gulp.task('default', gulp.series('watch:sass'));
+gulp.task('default', gulp.series('watch'));

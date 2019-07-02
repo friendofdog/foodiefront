@@ -12,19 +12,10 @@ add_filter( 'use_block_editor_for_post', '__return_false' );
 require_once( 'inc/class-fj.php' );
 require_once( 'inc/class-woocommerce.php' );
 
+add_action( 'wp_enqueue_scripts', 'fj_enqueue_minified_scripts', 100 );
 
-
-
-
-
-
-/* Storefront
- ========================================================================== */
-add_action( 'wp_enqueue_scripts', 'add_fontawesome_kit', 100 );
-
-function add_fontawesome_kit() {
-    wp_register_script( 'fa-kit', 'https://kit.fontawesome.com/4861f2b45b.js', array( 'jquery' ) , '5.9.0', true ); // -- From an External URL
-    wp_enqueue_script( 'fa-kit' );
+function fj_enqueue_minified_scripts() {
+  wp_enqueue_script( 'scripts', get_stylesheet_directory_uri() . '/scripts.min.js', array ( 'jquery' ), 1.1, true);
 }
 
 
