@@ -6,3 +6,53 @@ Author: Kevin Kee
 Author URI: https://foodiejapan.com
 Template: storefront
 */
+
+@import url(assets/css/social-icons.css);
+
+.storefront-secondary-navigation .site-header .fj-preheader {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .storefront-secondary-navigation .site-header .fj-preheader {
+    display: block;
+  }
+
+  .storefront-secondary-navigation .site-header .fj-preheader .preheader-text {
+    width: 39.13043%;
+    float: left;
+    margin-right: 4.34783%;
+    display: inline-block;
+    margin-right: 0;
+  }
+
+  .storefront-secondary-navigation .site-header .fj-preheader .preheader-text a {
+    padding: 1em ms(2);
+  }
+
+  .storefront-secondary-navigation .site-header .fj-preheader .secondary-navigation {
+    width: 56.52174%;
+    float: right;
+    margin-right: 0;
+    display: inline-block;
+    margin-right: 0;
+    margin: 0;
+  }
+
+  .storefront-secondary-navigation .site-header .storefront-primary-navigation .main-navigation {
+    width: 73.91304%;
+    float: left;
+    margin-right: 4.34783%;
+    display: inline-block;
+    margin-right: 0;
+    float: none;
+  }
+
+  .storefront-secondary-navigation .site-header .storefront-primary-navigation .site-branding {
+    width: 21.73913%;
+    float: left;
+    margin-right: 4.34783%;
+    display: inline-block;
+    margin-right: 0;
+  }
+}

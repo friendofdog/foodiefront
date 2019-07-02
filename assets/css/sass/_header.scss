@@ -1,0 +1,56 @@
+.storefront-secondary-navigation {
+  .site-header {
+    .fj-preheader {
+      display: none;
+    }
+  }
+}
+
+@include susy-media($desktop) {
+  .storefront-secondary-navigation {
+    .site-header {
+      .fj-preheader {
+        display: block;
+
+        .preheader-text {
+          @include span(5 or 12);
+          @include nav-container;
+
+          a {
+            padding: 1em ms(2);
+          }
+        }
+
+        .secondary-navigation {
+          @include span(last 7 or 12);
+          @include nav-container;
+          margin: 0;
+        }
+      }
+
+      .storefront-primary-navigation {
+
+        .main-navigation {
+          @include span(9 or 12);
+          @include nav-container;
+          float: none;
+        }
+
+        .site-branding {
+          @include span(3 or 12);
+          @include nav-container;
+        }
+      }
+    }
+  }
+
+  // .site-header {
+  //   .main-navigation {
+  //     @include span(9 or 12);
+  //     @include nav-container;
+  //     float: none;
+  //   }
+  // }
+
+
+}

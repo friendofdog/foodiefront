@@ -9,8 +9,8 @@ const bs = require('browser-sync');
 const bourbon = require('bourbon').includePaths;
 
 const SASS_SOURCES = [
-  './*.scss', // This picks up our style.scss file at the root of the theme
-  'css/**/*.scss', // All other Sass files in the /css directory
+  './*.scss',
+  'assets/css/sass/**/*.scss',
 ];
 
 /**
@@ -18,8 +18,13 @@ const SASS_SOURCES = [
  */
 gulp.task('lint:sass', () => {
   return gulp.src(SASS_SOURCES)
+    .pipe(sassLint({
+      'rules':{
+        'nesting-depth': 'off',
+        'no-css-comments': 'off'
+      }
+    }))
     .pipe(plumber())
-    .pipe(sassLint())
     .pipe(sassLint.format())
 });
 
