@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Foodie Japan Structure
+ * Foodie Japan Header
  *
  * @author   FriendOfDog
  * @since    1.0
@@ -11,26 +11,25 @@ if ( ! defined( 'ABSPATH' ) ) {
   exit;
 }
 
-if ( ! class_exists( 'Foodie_Japan_Structure' ) ) :
+if ( ! class_exists( 'Foodie_Japan_Header' ) ) :
 
-class Foodie_Japan_Structure {
+class Foodie_Japan_Header {
   /**
    * Setup class.
    *
    * @since 1.0
    */
   public function __construct() {
-    add_action( 'wp', array( $this, 'layout_adjustments' ) );
+    add_action( 'wp', array( $this, 'header_adjustments' ) );
     add_action( 'get_header', array( $this, 'remove_storefront_sidebar' ) );
     add_action( 'widgets_init', array( $this, 'add_preheader_text' ) );
   }
 
   /**
-   * Layout adjustments
-   * @return rearrange markup through add_action and remove_action
+   * Header adjustments
+   * @return rearrange header
    */
-  public function layout_adjustments() {
-    add_action( 'storefront_header', 'fj_preheader_text', 25);
+  public function header_adjustments() {
     function fj_preheader_text() {
       if ( is_active_sidebar( 'preheader_text' ) ) : ?>
       	<div id="preheader-text" class="preheader-text" role="complementary">
@@ -48,15 +47,20 @@ class Foodie_Japan_Structure {
     }
 
     remove_action( 'storefront_header', 'storefront_header_container', 0);
-    remove_action( 'storefront_header', 'storefront_product_search', 41);
+    remove_action( 'storefront_header', 'storefront_product_search', 40);
     remove_action( 'storefront_header', 'storefront_site_branding', 20);
 
     add_action( 'storefront_header', 'fj_preheader', 0);
     add_action( 'storefront_header', 'storefront_header_container', 1);
+    add_action( 'storefront_header', 'fj_preheader_text', 25);
     add_action( 'storefront_header', 'fj_preheader_close', 40);
     add_action( 'storefront_header', 'storefront_site_branding', 45);
   }
 
+  /**
+   * Sidebars
+   * @return remove Storefront sidebar, add preheader sidebar
+   */
   public function remove_storefront_sidebar() {
     remove_action( 'storefront_sidebar', 'storefront_get_sidebar', 10 );
   }
@@ -75,4 +79,4 @@ class Foodie_Japan_Structure {
 
 endif;
 
-return new Foodie_Japan_Structure();
+return new Foodie_Japan_Header();

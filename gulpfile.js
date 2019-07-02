@@ -89,7 +89,10 @@ gulp.task('compile:js', function () {
   return gulp.src(JS_SOURCES)
     .pipe(concat('scripts.js'))
     .pipe(gulp.dest('./'))
-    .pipe(rename('scripts.min.js'))
+    .pipe(rename( {
+      basename: "scripts",
+      suffix: '.min'
+    }))
     .pipe(uglify())
     .pipe(gulp.dest('./'))
 });
