@@ -8,6 +8,9 @@ $light-text:            $light-grey;
 $brand-primary:         $turquoise;
 $brand-secondary:       $purple;
 
+// Storefront overwrites
+$color_woocommerce:     $purple;
+
 $transition-fast:       150ms;
 $transition-normal:     300ms;
 $transition-slow:       450ms;

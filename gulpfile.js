@@ -16,7 +16,7 @@ const uglify = composer(uglifyes, console);
 
 const SASS_SOURCES = [
   './*.scss',
-  'assets/css/sass/**/*.scss',
+  'assets/css/sass/**/*.scss'
 ];
 
 const JS_SOURCES = [
@@ -27,7 +27,7 @@ const JS_SOURCES = [
  * Lint Sass
  */
 gulp.task('lint:sass', () => {
-  return gulp.src(SASS_SOURCES)
+  return gulp.src(SASS_SOURCES, { allowEmpty: true })
     .pipe(sassLint({
       'rules':{
         'nesting-depth': 0,

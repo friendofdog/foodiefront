@@ -29,8 +29,9 @@ class Foodie_Japan_Site {
     // disable Gutenberg editor
     add_filter( 'use_block_editor_for_post', '__return_false' );
 
-    add_action( 'wp_enqueue_scripts', array( $this, 'remove_unneeded_styles' ) );
-    add_action( 'wp_enqueue_scripts', array( $this, 'fj_enqueue_minified_scripts' ) );
+    add_action( 'wp_enqueue_scripts', array( $this, 'remove_unneeded_styles' ), 30 );
+    add_action( 'wp_enqueue_scripts', array( $this, 'fj_enqueue_minified_scripts' ), 30 );
+    add_action( 'wp_enqueue_scripts', array( $this, 'extract_storefront_inline' ), 150 );
     add_action( 'init', array( $this, 'fj_press_custom_init' ) );
   }
 
@@ -40,11 +41,12 @@ class Foodie_Japan_Site {
    */
   public function remove_unneeded_styles() {
     wp_dequeue_style( 'wp-block-library' );
-    wp_deregister_style( 'wp-block-library' );
     wp_dequeue_style( 'wp-block-library-theme' );
-    wp_deregister_style( 'wp-block-library-theme' );
     wp_dequeue_style( 'storefront-gutenberg-blocks' );
-    wp_deregister_style( 'storefront-gutenberg-blocks' );
+    wp_dequeue_style( 'storefront-style' );
+    wp_dequeue_style( 'storefront-woocommerce-style' );
+    wp_dequeue_style( 'storefront-child-style' );
+    wp_dequeue_style( 'storefront-woocommerce-bookings-style' );
   }
 
   public function fj_enqueue_minified_scripts() {
@@ -64,6 +66,13 @@ class Foodie_Japan_Site {
       'supports'              => array('page-attributes', 'editor', 'title'),
     );
     register_post_type( 'press', $args );
+  }
+
+  public function extract_storefront_inline() {
+    $inline_style = WP_Styles()->registered['storefront-style']->extra['after'][0];
+    wp_register_style( 'customizer-style', false );
+    wp_enqueue_style( 'customizer-style' );
+    wp_add_inline_style( 'customizer-style', $inline_style );
   }
 }
 
