@@ -47,11 +47,11 @@ class Foodie_Japan_Header {
     }
 
     remove_action( 'storefront_header', 'storefront_header_container', 0);
-    remove_action( 'storefront_header', 'storefront_product_search', 40);
     remove_action( 'storefront_header', 'storefront_site_branding', 20);
+    remove_action( 'storefront_header', 'storefront_product_search', 40);
+    remove_action( 'storefront_header', 'storefront_header_container_close', 41 );
 
     add_action( 'storefront_header', 'fj_preheader', 0);
-    add_action( 'storefront_header', 'storefront_header_container', 1);
     add_action( 'storefront_header', 'fj_preheader_text', 25);
     add_action( 'storefront_header', 'fj_preheader_close', 40);
     add_action( 'storefront_header', 'storefront_site_branding', 45);

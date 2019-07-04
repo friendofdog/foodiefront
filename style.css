@@ -14,8 +14,28 @@ Template: storefront
 }
 
 @media (min-width: 768px) {
+  .storefront-secondary-navigation .site-header {
+    padding-top: 0;
+  }
+
   .storefront-secondary-navigation .site-header .fj-preheader {
-    display: block;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #687274;
+    display: inline-block;
+    padding: 0 1rem;
+  }
+
+  .storefront-secondary-navigation .site-header .fj-preheader a {
+    color: #f5fafa;
+    font-size: 1.1rem;
+    padding: .5rem 1rem;
+  }
+
+  .storefront-secondary-navigation .site-header .fj-preheader a::after {
+    color: #f5fafa;
   }
 
   .storefront-secondary-navigation .site-header .fj-preheader .preheader-text {
@@ -24,10 +44,6 @@ Template: storefront
     margin-right: 4.34783%;
     display: inline-block;
     margin-right: 0;
-  }
-
-  .storefront-secondary-navigation .site-header .fj-preheader .preheader-text a {
-    padding: 1em ms(2);
   }
 
   .storefront-secondary-navigation .site-header .fj-preheader .secondary-navigation {
@@ -39,6 +55,12 @@ Template: storefront
     margin: 0;
   }
 
+  .storefront-secondary-navigation .site-header .storefront-primary-navigation {
+    background-color: #21c1ca;
+    -webkit-box-shadow: 10px 0 20px 5px #21c1ca;
+    box-shadow: 10px 0 20px 5px #21c1ca;
+  }
+
   .storefront-secondary-navigation .site-header .storefront-primary-navigation .main-navigation {
     width: 73.91304%;
     float: left;
@@ -46,6 +68,18 @@ Template: storefront
     display: inline-block;
     margin-right: 0;
     float: none;
+    margin: 1rem 0 1rem 1rem;
+  }
+
+  .storefront-secondary-navigation .site-header .storefront-primary-navigation .main-navigation a {
+    color: #f5fafa;
+    font-size: 1.2rem;
+  }
+
+  .storefront-secondary-navigation .site-header .storefront-primary-navigation .main-navigation a:hover {
+    -webkit-transition: color 300ms ease-in-out;
+    transition: color 300ms ease-in-out;
+    color: #b530f0;
   }
 
   .storefront-secondary-navigation .site-header .storefront-primary-navigation .site-branding {
@@ -54,5 +88,6 @@ Template: storefront
     margin-right: 4.34783%;
     display: inline-block;
     margin-right: 0;
+    margin: 1.8rem 0;
   }
 }

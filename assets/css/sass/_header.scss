@@ -9,16 +9,25 @@
 @include susy-media($desktop) {
   .storefront-secondary-navigation {
     .site-header {
+      padding-top: 0;
+
       .fj-preheader {
-        display: block;
+        @include span(12);
+        background-color: $dark-background;
+        display: inline-block;
+        padding: 0 1rem;
+
+        a {
+          @include preheader-text;
+
+          &::after {
+            color: $light-text;
+          }
+        }
 
         .preheader-text {
           @include span(5 or 12);
           @include nav-container;
-
-          a {
-            padding: 1em ms(2);
-          }
         }
 
         .secondary-navigation {
@@ -29,16 +38,30 @@
       }
 
       .storefront-primary-navigation {
+        background-color: darken($brand-primary, 10%);
+        box-shadow: 10px 0 20px 5px darken($brand-primary, 10%);
 
         .main-navigation {
           @include span(9 or 12);
           @include nav-container;
           float: none;
+          margin: 1rem 0 1rem 1rem;
+
+          a {
+            color: $light-text;
+            font-size: 1.2rem;
+
+            &:hover {
+              @include transition-color;
+              color: $brand-secondary;
+            }
+          }
         }
 
         .site-branding {
           @include span(3 or 12);
           @include nav-container;
+          margin: 1.8rem 0;
         }
       }
     }

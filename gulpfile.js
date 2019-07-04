@@ -30,8 +30,8 @@ gulp.task('lint:sass', () => {
   return gulp.src(SASS_SOURCES)
     .pipe(sassLint({
       'rules':{
-        'nesting-depth': 'off',
-        'no-css-comments': 'off'
+        'nesting-depth': 0,
+        'no-css-comments': 0
       }
     }))
     .pipe(plumber())
