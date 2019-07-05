@@ -6,6 +6,7 @@ $purple:                #b530f0;
 $dark-background:       $grey;
 $light-text:            $light-grey;
 $brand-primary:         $turquoise;
+$brand-primary-dark:    darken($brand-primary, 10%);
 $brand-secondary:       $purple;
 
 // Storefront overwrites

@@ -1,5 +1,9 @@
 .storefront-secondary-navigation {
   .site-header {
+    .storefront-primary-navigation {
+      padding: 0 2rem;
+    }
+
     .fj-preheader {
       display: none;
     }
@@ -9,7 +13,14 @@
 @include susy-media($desktop) {
   .storefront-secondary-navigation {
     .site-header {
+      @include jagged-border-bottom;
+      background: transparent;
+      border-bottom-color: transparent;
       padding-top: 0;
+
+      .storefront-primary-navigation {
+        padding: 0 1rem;
+      }
 
       .fj-preheader {
         @include span(12);
@@ -39,7 +50,6 @@
 
       .storefront-primary-navigation {
         background-color: darken($brand-primary, 10%);
-        box-shadow: 10px 0 20px 5px darken($brand-primary, 10%);
 
         .main-navigation {
           @include span(9 or 12);
@@ -51,9 +61,35 @@
             color: $light-text;
             font-size: 1.2rem;
 
-            &:hover {
+            &:hover,
+            &.focus {
               @include transition-color;
+              background-color: inherit;
               color: $brand-secondary;
+            }
+          }
+
+          .menu {
+            li {
+              .sub-menu {
+                opacity: 0;
+                top: 0;
+              }
+
+              &:hover,
+              &.focus {
+                .sub-menu {
+                  @include transition-visibility;
+                  opacity: 1;
+                  top: calc(100% - 1rem);
+                }
+              }
+            }
+          }
+
+          .menu {
+            .sub-menu {
+              background-image: linear-gradient(to bottom, darken($brand-primary, 10%), $brand-primary);
             }
           }
         }
@@ -62,6 +98,12 @@
           @include span(3 or 12);
           @include nav-container;
           margin: 1.8rem 0;
+
+          img {
+            height: 68px;
+            margin: auto;
+            width: auto;
+          }
         }
       }
     }

@@ -12,3 +12,27 @@
 @mixin transition-color {
   transition: color $transition-normal ease-in-out;
 }
+
+@mixin transition-visibility {
+  transition: top $transition-normal, opacity $transition-slow;
+}
+
+@mixin shadow-border-bottom {
+  box-shadow: 0 0 10px 5px $brand-primary-dark;
+}
+
+@mixin jagged-border-bottom {
+  &::after {
+    background: linear-gradient(-45deg, transparent 16px, $brand-primary-dark 0), linear-gradient(45deg, transparent 16px, $brand-primary-dark 0);
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    background-size: 22px 32px;
+    content: '';
+    display: block;
+    height: 14px;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+  }
+}
