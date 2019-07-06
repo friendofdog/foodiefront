@@ -9968,6 +9968,12 @@ dl.variation dd {
   display: none;
 }
 
+.primary-button {
+  border-radius: 5px;
+  margin: 0 .5rem;
+  padding: 1rem 2rem;
+}
+
 @media (min-width: 768px) {
   table.shop_table_responsive tbody tr td,
   table.shop_table_responsive tbody tr th {
@@ -11936,6 +11942,34 @@ dl.variation dd {
     height: 68px;
     margin: auto;
     width: auto;
+  }
+
+  .fj-hero-banner {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 4.2358em;
+    margin-top: -5rem;
+    padding: 8rem 2rem;
+  }
+
+  .fj-hero-banner h1 {
+    color: #ffffff;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+
+  .fj-hero-banner .banner-text {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .fj-hero-banner .button-wrapper {
+    text-align: center;
   }
 }
 

@@ -29,17 +29,17 @@ class Foodie_Japan_Site {
     // disable Gutenberg editor
     add_filter( 'use_block_editor_for_post', '__return_false' );
 
-    add_action( 'wp_enqueue_scripts', array( $this, 'remove_unneeded_styles' ), 30 );
-    add_action( 'wp_enqueue_scripts', array( $this, 'fj_enqueue_minified_scripts' ), 30 );
-    add_action( 'wp_enqueue_scripts', array( $this, 'extract_storefront_inline' ), 150 );
-    add_action( 'init', array( $this, 'fj_press_custom_init' ) );
+    add_action( 'wp_enqueue_scripts', array( $this, 'styles_scripts_init' ), 30 );
+    add_action( 'wp_enqueue_scripts', array( $this, 'customizer_styling_init' ), 150 );
+    add_action( 'init', array( $this, 'custom_post_types_init' ) );
+    add_action( 'init', array( $this, 'custom_image_size_init' ) );
   }
 
   /**
    * Dequeue styles
-   * @return remove unneded styles
+   * @return initiate styles and scripts
    */
-  public function remove_unneeded_styles() {
+  public function styles_scripts_init() {
     wp_dequeue_style( 'wp-block-library' );
     wp_dequeue_style( 'wp-block-library-theme' );
     wp_dequeue_style( 'storefront-gutenberg-blocks' );
@@ -47,13 +47,26 @@ class Foodie_Japan_Site {
     wp_dequeue_style( 'storefront-woocommerce-style' );
     wp_dequeue_style( 'storefront-child-style' );
     wp_dequeue_style( 'storefront-woocommerce-bookings-style' );
-  }
 
-  public function fj_enqueue_minified_scripts() {
     wp_enqueue_script( 'scripts', get_stylesheet_directory_uri() . '/scripts.min.js');
   }
 
-  public function fj_press_custom_init() {
+  /**
+   * Customizer styling
+   * @return remove storefront customizer styling and enqueue later
+   */
+  public function customizer_styling_init() {
+    $inline_style = WP_Styles()->registered['storefront-style']->extra['after'][0];
+    wp_register_style( 'customizer-style', false );
+    wp_enqueue_style( 'customizer-style' );
+    wp_add_inline_style( 'customizer-style', $inline_style );
+  }
+
+  /**
+   * Custom post types
+   * @return add post types
+   */
+  public function custom_post_types_init() {
     $args = array(
       'public'                => true,
       // 'taxonomies'            => array( 'category' ),
@@ -68,11 +81,12 @@ class Foodie_Japan_Site {
     register_post_type( 'press', $args );
   }
 
-  public function extract_storefront_inline() {
-    $inline_style = WP_Styles()->registered['storefront-style']->extra['after'][0];
-    wp_register_style( 'customizer-style', false );
-    wp_enqueue_style( 'customizer-style' );
-    wp_add_inline_style( 'customizer-style', $inline_style );
+  /**
+   * Image sizes
+   * @return add custom image sizes
+   */
+  public function custom_image_size_init() {
+    add_image_size( 'hero-banner', 1800, 600, array( 'center', 'center' ) );
   }
 }
 

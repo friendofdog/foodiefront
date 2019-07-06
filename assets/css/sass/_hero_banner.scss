@@ -1,0 +1,29 @@
+@include susy-media($desktop) {
+  .fj-hero-banner {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 4.2358em;
+    margin-top: -5rem;
+    padding: 8rem 2rem;
+
+    h1 {
+      color: $white;
+      font-size: 4rem;
+      font-weight: 700;
+      margin-bottom: 4rem;
+      text-align: center;
+    }
+
+    .banner-text {
+      color: $white;
+      font-size: 2rem;
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+
+    .button-wrapper {
+      @include center-text;
+    }
+  }
+}
