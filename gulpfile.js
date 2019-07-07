@@ -31,6 +31,8 @@ gulp.task('lint:sass', () => {
     .pipe(sassLint({
       'rules':{
         'nesting-depth': 0,
+        'force-pseudo-nesting': 0,
+        'force-element-nesting': 0,
         'no-css-comments': 0
       }
     }))

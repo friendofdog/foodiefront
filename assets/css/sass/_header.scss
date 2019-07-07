@@ -1,7 +1,13 @@
+.home.blog .site-header,
+.home.page:not(.page-template-template-homepage) .site-header,
+.home.post-type-archive-product .site-header {
+  margin-bottom: 0;
+}
+
 .storefront-secondary-navigation {
   .site-header {
     .storefront-primary-navigation {
-      padding: 0 2rem;
+      padding: 0 $nav-spacing * 2;
     }
 
     .fj-preheader {
@@ -11,6 +17,12 @@
 }
 
 @include susy-media($desktop) {
+  .home.blog .site-header,
+  .home.page:not(.page-template-template-homepage) .site-header,
+  .home.post-type-archive-product .site-header {
+    margin-bottom: $base-spacing * 2.1;
+  }
+
   .storefront-secondary-navigation {
     .site-header {
       @include jagged-border-bottom;
@@ -19,14 +31,14 @@
       padding-top: 0;
 
       .storefront-primary-navigation {
-        padding: 0 1rem;
+        padding: 0 $nav-spacing;
       }
 
       .fj-preheader {
         @include span(12);
         background-color: $dark-background;
         display: inline-block;
-        padding: 0 1rem;
+        padding: 0 $nav-spacing;
 
         a {
           @include preheader-text;
@@ -55,11 +67,12 @@
           @include span(9 or 12);
           @include nav-container;
           float: none;
-          margin: 1rem 0 1rem 1rem;
+          margin: $nav-spacing 0 $nav-spacing $nav-spacing;
 
           a {
             color: $light-text;
             font-size: 1.2rem;
+            padding: $nav-spacing * 1.16 $nav-spacing;
 
             &:hover,
             &.focus {
@@ -81,7 +94,7 @@
                 .sub-menu {
                   @include transition-visibility;
                   opacity: 1;
-                  top: calc(100% - 1rem);
+                  top: calc(100%);
                 }
               }
             }
@@ -97,7 +110,7 @@
         .site-branding {
           @include span(3 or 12);
           @include nav-container;
-          margin: 1.8rem 0;
+          margin: $nav-spacing * 1.8 0;
 
           img {
             height: 68px;

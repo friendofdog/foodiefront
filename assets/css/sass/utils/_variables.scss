@@ -2,7 +2,7 @@ $grey:                  #687274;
 $light-grey:            #f5fafa;
 $turquoise:             #3ed7e0;
 $purple:                #b530f0;
-$white:                 #ffffff;
+$white:                 #fff;
 
 $dark-background:       $grey;
 $light-text:            $light-grey;
@@ -16,3 +16,6 @@ $color_woocommerce:     $purple;
 $transition-fast:       150ms;
 $transition-normal:     300ms;
 $transition-slow:       450ms;
+
+$base-spacing:          2rem;
+$nav-spacing:           $base-spacing / 2;

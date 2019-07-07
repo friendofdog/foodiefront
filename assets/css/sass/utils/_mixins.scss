@@ -10,7 +10,7 @@
 @mixin preheader-text {
   color: $light-text;
   font-size: 1.1rem;
-  padding: .5rem 1rem;
+  padding: $base-spacing / 4 $base-spacing / 2;
 }
 
 @mixin transition-color {
