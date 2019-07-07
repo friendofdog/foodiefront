@@ -25,7 +25,7 @@ class Foodie_Japan_Contact {
 
   /**
    * CF7 shortcode
-   * @return add shortcode for default title
+   * @return void
    */
   public function fj_custom_shortcode_atts_wpcf7_filter( $out, $pairs, $atts ) {
       $tour_title = 'tour-title';

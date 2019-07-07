@@ -25,7 +25,7 @@ class Foodie_Japan_Yoast {
 
   /**
    * Unset fields
-   * @return remove unneded yoast fields
+   * @return void
    */
   public function fj_yoast_admin_remove_columns( $columns ) {
     unset($columns['wpseo-score']);

@@ -31,13 +31,14 @@ class Foodie_Japan_Site {
 
     add_action( 'wp_enqueue_scripts', array( $this, 'styles_scripts_init' ), 30 );
     add_action( 'wp_enqueue_scripts', array( $this, 'customizer_styling_init' ), 150 );
+    add_action( 'wp_enqueue_scripts', array( $this, 'siteorigin_panels_remove_inline_css'), 11 );
     add_action( 'init', array( $this, 'custom_post_types_init' ) );
     add_action( 'init', array( $this, 'custom_image_size_init' ) );
   }
 
   /**
    * Dequeue styles
-   * @return initiate styles and scripts
+   * @return void
    */
   public function styles_scripts_init() {
     wp_dequeue_style( 'wp-block-library' );
@@ -53,7 +54,7 @@ class Foodie_Japan_Site {
 
   /**
    * Customizer styling
-   * @return remove storefront customizer styling and enqueue later
+   * @return void
    */
   public function customizer_styling_init() {
     $inline_style = WP_Styles()->registered['storefront-style']->extra['after'][0];
@@ -63,8 +64,18 @@ class Foodie_Japan_Site {
   }
 
   /**
+   * Siteorigin styling
+   * @return void
+   */
+  public function siteorigin_panels_remove_inline_css(){
+    $renderer = SiteOrigin_Panels_Renderer::single();
+    remove_action( 'wp_head', array( $renderer, 'print_inline_css' ), 12 );
+    remove_action( 'wp_footer', array( $renderer, 'print_inline_css' ) );
+  }
+
+  /**
    * Custom post types
-   * @return add post types
+   * @return void
    */
   public function custom_post_types_init() {
     $args = array(
@@ -83,7 +94,7 @@ class Foodie_Japan_Site {
 
   /**
    * Image sizes
-   * @return add custom image sizes
+   * @return void
    */
   public function custom_image_size_init() {
     add_image_size( 'hero-banner', 1800, 600, array( 'center', 'center' ) );

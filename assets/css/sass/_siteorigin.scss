@@ -1,0 +1,26 @@
+.panel-grid {
+  margin-bottom: $row-bottom;
+
+  .panel-row-style {
+    flex-direction: column;
+  }
+
+  .panel-grid-cell {
+    margin-bottom: $row-bottom;
+    width: 100%;
+  }
+}
+
+@include susy-media($desktop) {
+  .panel-grid {
+    margin-bottom: $row-bottom-desktop;
+
+    .panel-row-style {
+      flex-direction: row;
+    }
+
+    .panel-grid-cell {
+      @include grid-cell(1);
+    }
+  }
+}

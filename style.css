@@ -9960,6 +9960,28 @@ dl.variation dd {
   display: none;
 }
 
+.panel-grid {
+  margin-bottom: 4rem;
+}
+
+.panel-grid .panel-row-style {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.panel-grid .panel-grid-cell {
+  margin-bottom: 4rem;
+  width: 100%;
+}
+
+.home.blog .site-header,
+.home.page:not(.page-template-template-homepage) .site-header,
+.home.post-type-archive-product .site-header {
+  margin-bottom: 0;
+}
+
 .storefront-secondary-navigation .site-header .storefront-primary-navigation {
   padding: 0 2rem;
 }
@@ -9970,7 +9992,7 @@ dl.variation dd {
 
 .primary-button {
   border-radius: 5px;
-  margin: 0 .5rem;
+  margin: 0 0.5rem;
   padding: 1rem 2rem;
 }
 
@@ -11823,6 +11845,95 @@ dl.variation dd {
     top: 32px;
   }
 
+  .panel-grid {
+    margin-bottom: 6rem;
+  }
+
+  .panel-grid .panel-row-style {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .panel-grid .panel-grid-cell:first-child:nth-last-child(1),
+  .panel-grid .panel-grid-cell:first-child:nth-last-child(1) ~ .panel-grid-cell {
+    width: 100%;
+  }
+
+  .panel-grid .panel-grid-cell:first-child:nth-last-child(2),
+  .panel-grid .panel-grid-cell:first-child:nth-last-child(2) ~ .panel-grid-cell {
+    width: 50%;
+  }
+
+  .panel-grid .panel-grid-cell:first-child:nth-last-child(3),
+  .panel-grid .panel-grid-cell:first-child:nth-last-child(3) ~ .panel-grid-cell {
+    width: 33.33333%;
+  }
+
+  .panel-grid .panel-grid-cell:first-child:nth-last-child(4),
+  .panel-grid .panel-grid-cell:first-child:nth-last-child(4) ~ .panel-grid-cell {
+    width: 25%;
+  }
+
+  .panel-grid .panel-grid-cell:first-child:nth-last-child(5),
+  .panel-grid .panel-grid-cell:first-child:nth-last-child(5) ~ .panel-grid-cell {
+    width: 20%;
+  }
+
+  .panel-grid .panel-grid-cell:first-child:nth-last-child(6),
+  .panel-grid .panel-grid-cell:first-child:nth-last-child(6) ~ .panel-grid-cell {
+    width: 16.66667%;
+  }
+
+  .panel-grid .panel-grid-cell:first-child:nth-last-child(7),
+  .panel-grid .panel-grid-cell:first-child:nth-last-child(7) ~ .panel-grid-cell {
+    width: 14.28571%;
+  }
+
+  .panel-grid .panel-grid-cell:first-child:nth-last-child(8),
+  .panel-grid .panel-grid-cell:first-child:nth-last-child(8) ~ .panel-grid-cell {
+    width: 12.5%;
+  }
+
+  .panel-grid .panel-grid-cell:first-child:nth-last-child(9),
+  .panel-grid .panel-grid-cell:first-child:nth-last-child(9) ~ .panel-grid-cell {
+    width: 11.11111%;
+  }
+
+  .panel-grid .panel-grid-cell:first-child:nth-last-child(10),
+  .panel-grid .panel-grid-cell:first-child:nth-last-child(10) ~ .panel-grid-cell {
+    width: 10%;
+  }
+
+  .panel-grid .panel-grid-cell:first-child:nth-last-child(11),
+  .panel-grid .panel-grid-cell:first-child:nth-last-child(11) ~ .panel-grid-cell {
+    width: 9.09091%;
+  }
+
+  .panel-grid .panel-grid-cell:first-child:nth-last-child(12),
+  .panel-grid .panel-grid-cell:first-child:nth-last-child(12) ~ .panel-grid-cell {
+    width: 8.33333%;
+  }
+
+  .panel-grid .panel-grid-cell:first-child:not(:last-child) {
+    margin: 0 2rem 0 0;
+  }
+
+  .panel-grid .panel-grid-cell:last-child:not(:first-child) {
+    margin: 0 0 0 2rem;
+  }
+
+  .panel-grid .panel-grid-cell:not(:first-child):not(:last-child) {
+    margin: 0 2rem;
+  }
+
+  .home.blog .site-header,
+  .home.page:not(.page-template-template-homepage) .site-header,
+  .home.post-type-archive-product .site-header {
+    margin-bottom: 4.2rem;
+  }
+
   .storefront-secondary-navigation .site-header {
     background: transparent;
     border-bottom-color: transparent;
@@ -11860,7 +11971,7 @@ dl.variation dd {
   .storefront-secondary-navigation .site-header .fj-preheader a {
     color: #f5fafa;
     font-size: 1.1rem;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
   }
 
   .storefront-secondary-navigation .site-header .fj-preheader a::after {
@@ -11901,6 +12012,7 @@ dl.variation dd {
   .storefront-secondary-navigation .site-header .storefront-primary-navigation .main-navigation a {
     color: #f5fafa;
     font-size: 1.2rem;
+    padding: 1.16rem 1rem;
   }
 
   .storefront-secondary-navigation .site-header .storefront-primary-navigation .main-navigation a:hover,
@@ -11921,7 +12033,7 @@ dl.variation dd {
     -webkit-transition: top 300ms, opacity 450ms;
     transition: top 300ms, opacity 450ms;
     opacity: 1;
-    top: calc(100% - 1rem);
+    top: calc(100%);
   }
 
   .storefront-secondary-navigation .site-header .storefront-primary-navigation .main-navigation .menu .sub-menu {
@@ -11944,17 +12056,20 @@ dl.variation dd {
     width: auto;
   }
 
+  .home .fj-hero-banner {
+    margin-top: -5rem;
+  }
+
   .fj-hero-banner {
-    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     margin-bottom: 4.2358em;
-    margin-top: -5rem;
-    padding: 8rem 2rem;
+    padding: 8rem 4rem;
   }
 
   .fj-hero-banner h1 {
-    color: #ffffff;
+    color: #fff;
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 4rem;
@@ -11962,7 +12077,7 @@ dl.variation dd {
   }
 
   .fj-hero-banner .banner-text {
-    color: #ffffff;
+    color: #fff;
     font-size: 2rem;
     margin-bottom: 3rem;
     text-align: center;

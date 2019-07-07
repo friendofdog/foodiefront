@@ -26,8 +26,8 @@ class Foodie_Japan_Hero_Banner {
 
   /**
    * Hero header banner inline style
-   * @return add backgound image inline
-    */
+   * @return void
+   */
   public function hero_header_banner_background() {
     $image = get_field('background_image');
 
@@ -48,8 +48,8 @@ class Foodie_Japan_Hero_Banner {
 
   /**
    * Hero header banner
-   * @return initiate banner
-    */
+   * @return void
+   */
   public function hero_header_banner_init() {
     $is_active = get_field('is_active');
     $header = get_field('header');

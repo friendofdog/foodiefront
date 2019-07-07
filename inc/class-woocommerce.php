@@ -29,7 +29,7 @@ class Foodie_Japan_Woocommerce {
 
   /**
    * Unset billing
-   * @return remove unneded billing fields
+   * @return void
    */
   public function fj_override_checkout_fields( $fields ) {
    unset($fields['billing']['billing_company']);
@@ -44,7 +44,7 @@ class Foodie_Japan_Woocommerce {
 
   /**
    * Hide empty cart
-   * @return hide cart when empty
+   * @return void
    */
   public function fj_hide_cart() {
     if ( WC()->cart->get_cart_contents_count() == 0 ) {

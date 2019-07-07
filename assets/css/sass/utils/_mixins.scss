@@ -40,3 +40,24 @@
     width: 100%;
   }
 }
+
+@mixin grid-cell($multiplier: 1) {
+  @for $i from 1 through 12 {
+    &:first-child:nth-last-child(#{$i}),
+    &:first-child:nth-last-child(#{$i}) ~ .panel-grid-cell {
+      width: 100% / $i;
+    }
+  }
+
+  &:first-child:not(:last-child) {
+    margin: 0 #{$base-spacing * $multiplier} 0 0;
+  }
+
+  &:last-child:not(:first-child) {
+    margin: 0 0 0 #{$base-spacing * $multiplier};
+  }
+
+  &:not(:first-child):not(:last-child) {
+    margin: 0 #{$base-spacing * $multiplier};
+  }
+}
