@@ -1,0 +1,38 @@
+$border: 5px;
+$polaroid-spacing: $base-spacing / 3;
+
+.posts-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+  .post-panel {
+    @include grid-cell(.5, 4);
+    background-color: $polaroid;
+    box-shadow: 1px 2px 7px $grey;
+    margin-bottom: $base-spacing / 2;
+    overflow-y: hidden;
+
+    .text-wrapper {
+      background-image: url('./assets/images/polaroid-light.png');
+      margin-bottom: $base-spacing * -5;
+      margin-top: $base-spacing * -.5;
+      padding-bottom: $base-spacing * 5 + $polaroid-spacing;
+      padding-top: $base-spacing / 2;
+
+      .text-title {
+        font-size: 1rem;
+        margin-bottom: 0;
+        padding: 0 $polaroid-spacing;
+        text-align: center;
+      }
+    }
+
+    .wp-post-image {
+      border-radius: 0;
+      margin-bottom: 0;
+      padding: $polaroid-spacing;
+    }
+  }
+}

@@ -41,23 +41,30 @@
   }
 }
 
-@mixin grid-cell($multiplier: 1) {
-  @for $i from 1 through 12 {
+@mixin grid-cell($multiplier: 1, $overwrite: 0) {
+  $spacing: $base-spacing * $multiplier;
+
+  // todo: implement tablet
+
+  @for $i from 1 through 24 {
+    $total: if($overwrite > 0, $overwrite, $i);
+
     &:first-child:nth-last-child(#{$i}),
-    &:first-child:nth-last-child(#{$i}) ~ .panel-grid-cell {
-      width: 100% / $i;
+    &:first-child:nth-last-child(#{$i}) ~ * {
+      width: 100% / $total;
     }
   }
 
   &:first-child:not(:last-child) {
-    margin: 0 #{$base-spacing * $multiplier} 0 0;
+    margin-right: #{$spacing};
   }
 
   &:last-child:not(:first-child) {
-    margin: 0 0 0 #{$base-spacing * $multiplier};
+    margin-left: #{$spacing};
   }
 
   &:not(:first-child):not(:last-child) {
-    margin: 0 #{$base-spacing * $multiplier};
+    margin-left: #{$spacing};
+    margin-right: #{$spacing};
   }
 }
