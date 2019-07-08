@@ -29,7 +29,6 @@ class Foodie_Japan_Header {
    * Header adjustments
    * @return void
    */
-
   public function header_adjustments() {
     function fj_preheader_text() {
       if ( is_active_sidebar( 'preheader_text' ) ) : ?>
@@ -54,6 +53,10 @@ class Foodie_Japan_Header {
     remove_action( 'storefront_sidebar', 'storefront_get_sidebar', 10 );
   }
 
+  /**
+   * Preheader text
+   * @return void
+   */
   public function add_preheader_text() {
     register_sidebar( array(
       'name' => 'Preheader text',
