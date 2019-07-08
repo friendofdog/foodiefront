@@ -33,7 +33,8 @@ gulp.task('lint:sass', () => {
         'nesting-depth': 0,
         'force-pseudo-nesting': 0,
         'force-element-nesting': 0,
-        'no-css-comments': 0
+        'no-css-comments': 0,
+        'no-important': 0
       },
       'files':{
         'ignore': 'assets/css/sass/vendors/*.scss'

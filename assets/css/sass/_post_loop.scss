@@ -1,7 +1,7 @@
-$border: 5px;
 $polaroid-spacing: $base-spacing / 3;
 
 .posts-grid {
+  @include slant;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -12,7 +12,13 @@ $polaroid-spacing: $base-spacing / 3;
     background-color: $polaroid;
     box-shadow: 1px 2px 7px $grey;
     margin-bottom: $base-spacing / 2;
+    outline: none !important;
     overflow-y: hidden;
+    text-decoration: none !important;
+
+    &:focus {
+      filter: brightness(95%);
+    }
 
     .text-wrapper {
       background-image: url('./assets/images/polaroid-light.png');
@@ -26,6 +32,17 @@ $polaroid-spacing: $base-spacing / 3;
         margin-bottom: 0;
         padding: 0 $polaroid-spacing;
         text-align: center;
+
+        &::after {
+          background: $grey;
+          bottom: -2px;
+          box-shadow: 0 0 5px $grey;
+          content: '';
+          height: 2px;
+          left: 0;
+          position: absolute;
+          width: 100%;
+        }
       }
     }
 
