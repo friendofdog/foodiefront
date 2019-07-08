@@ -6666,6 +6666,15 @@ dl.variation dd {
   padding: 1rem 2rem;
 }
 
+.nav-button {
+  float: right;
+  margin: 0.6rem 0;
+}
+
+.nav-button a {
+  padding: 0 !important;
+}
+
 @media (min-width: 768px) {
   table.shop_table_responsive tbody tr td,
   table.shop_table_responsive tbody tr th {
@@ -8685,8 +8694,9 @@ dl.variation dd {
     width: 100%;
   }
 
-  .storefront-secondary-navigation .site-header .storefront-primary-navigation {
-    padding: 0 1rem;
+  .storefront-secondary-navigation .site-header::after {
+    -webkit-filter: drop-shadow(0 7px 4px #687274);
+    filter: drop-shadow(0 7px 4px #687274);
   }
 
   .storefront-secondary-navigation .site-header .fj-preheader {
@@ -8728,6 +8738,9 @@ dl.variation dd {
 
   .storefront-secondary-navigation .site-header .storefront-primary-navigation {
     background-color: #21c1ca;
+    -webkit-box-shadow: 10px 10px 5px #687274;
+    box-shadow: 10px 10px 5px #687274;
+    padding: 0 1rem;
   }
 
   .storefront-secondary-navigation .site-header .storefront-primary-navigation .main-navigation {
@@ -8737,17 +8750,20 @@ dl.variation dd {
     display: inline-block;
     margin-right: 0;
     float: none;
-    margin: 1rem 0 1rem 1rem;
+    margin: 1.7rem 0 1.7rem 1rem;
   }
 
-  .storefront-secondary-navigation .site-header .storefront-primary-navigation .main-navigation a {
+  .storefront-secondary-navigation .site-header .storefront-primary-navigation .main-navigation li a {
     color: #f5fafa;
+  }
+
+  .storefront-secondary-navigation .site-header .storefront-primary-navigation .main-navigation li:not(.nav-button) a {
     font-size: 1.2rem;
     padding: 1.16rem 1rem;
   }
 
-  .storefront-secondary-navigation .site-header .storefront-primary-navigation .main-navigation a:hover,
-  .storefront-secondary-navigation .site-header .storefront-primary-navigation .main-navigation a.focus {
+  .storefront-secondary-navigation .site-header .storefront-primary-navigation .main-navigation li:not(.nav-button) a:hover,
+  .storefront-secondary-navigation .site-header .storefront-primary-navigation .main-navigation li:not(.nav-button) a.focus {
     -webkit-transition: color 300ms ease-in-out;
     transition: color 300ms ease-in-out;
     background-color: inherit;
@@ -8782,8 +8798,8 @@ dl.variation dd {
   }
 
   .storefront-secondary-navigation .site-header .storefront-primary-navigation .site-branding img {
-    height: 68px;
     margin: auto;
+    max-height: 68px;
     width: auto;
   }
 
@@ -8791,10 +8807,17 @@ dl.variation dd {
     margin-top: -5rem;
   }
 
+  .fj-hero-banner-wrapper {
+    -webkit-filter: drop-shadow(0 3px 3px #687274);
+    filter: drop-shadow(0 3px 3px #687274);
+  }
+
   .fj-hero-banner {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
     margin-bottom: 4.2358em;
     padding: 8rem 4rem;
   }

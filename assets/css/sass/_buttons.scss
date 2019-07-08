@@ -3,3 +3,12 @@
   margin: 0 $base-spacing / 4;
   padding: $base-spacing / 2 $base-spacing;
 }
+
+.nav-button {
+  float: right;
+  margin: $nav-spacing * .6 0;
+
+  a {
+    padding: 0 !important;
+  }
+}

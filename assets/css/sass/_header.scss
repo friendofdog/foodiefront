@@ -30,8 +30,8 @@
       border-bottom-color: transparent;
       padding-top: 0;
 
-      .storefront-primary-navigation {
-        padding: 0 $nav-spacing;
+      &::after {
+        filter: drop-shadow(0 7px 4px $grey);
       }
 
       .fj-preheader {
@@ -62,23 +62,32 @@
 
       .storefront-primary-navigation {
         background-color: darken($brand-primary, 10%);
+        box-shadow: 10px 10px 5px $grey;
+        padding: 0 $nav-spacing;
 
         .main-navigation {
           @include span(9 or 12);
           @include nav-container;
           float: none;
-          margin: $nav-spacing 0 $nav-spacing $nav-spacing;
+          margin: $nav-spacing * 1.7 0 $nav-spacing * 1.7 $nav-spacing;
 
-          a {
-            color: $light-text;
-            font-size: 1.2rem;
-            padding: $nav-spacing * 1.16 $nav-spacing;
+          li {
+            a {
+              color: $light-text;
+            }
 
-            &:hover,
-            &.focus {
-              @include transition-color;
-              background-color: inherit;
-              color: $brand-secondary;
+            &:not(.nav-button) {
+              a {
+                font-size: 1.2rem;
+                padding: $nav-spacing * 1.16 $nav-spacing;
+
+                &:hover,
+                &.focus {
+                  @include transition-color;
+                  background-color: inherit;
+                  color: $brand-secondary;
+                }
+              }
             }
           }
 
@@ -113,8 +122,8 @@
           margin: $nav-spacing * 1.8 0;
 
           img {
-            height: 68px;
             margin: auto;
+            max-height: 68px;
             width: auto;
           }
         }

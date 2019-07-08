@@ -59,18 +59,20 @@ class Foodie_Japan_Hero_Banner {
 
     if ( $is_active ) : ?>
 
-      <div class="fj-hero-banner">
-        <h1><?php the_field('header'); ?></h1>
-        <div class="banner-text"><?php the_field('text'); ?></div>
-        <?php if ($buttons) : ?>
-        <div class="button-wrapper">
-          <?php foreach ($buttons as $button) { ?>
-          <a class="button primary-button" href="<?php echo $button->button_link; ?>">
-            <?php echo $button['button_text']; ?>
-          </a>
-          <?php } ?>
+      <div class="fj-hero-banner-wrapper">
+        <div class="fj-hero-banner">
+          <h1><?php the_field('header'); ?></h1>
+          <div class="banner-text"><?php the_field('text'); ?></div>
+          <?php if ($buttons) : ?>
+          <div class="button-wrapper">
+            <?php foreach ($buttons as $button) { ?>
+            <a class="button primary-button" href="<?php echo $button->button_link; ?>">
+              <?php echo $button['button_text']; ?>
+            </a>
+            <?php } ?>
+          </div>
+          <?php endif; ?>
         </div>
-        <?php endif; ?>
       </div>
 
     <?php endif;
