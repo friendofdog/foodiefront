@@ -12,7 +12,6 @@ Template: storefront
 
 // Storefront
 @import 'node_modules/susy/sass/susy';
-@import '../storefront_2.5.0/assets/css/sass/vendors/font-awesome/fontawesome';
 @import '../storefront_2.5.0/assets/css/sass/vendors/normalize';
 @import '../storefront_2.5.0/assets/css/sass/vendors/modular-scale';
 @import '../storefront_2.5.0/assets/css/sass/utils/variables';
@@ -24,7 +23,8 @@ Template: storefront
 @import '../storefront_2.5.0/assets/css/woocommerce/woocommerce';
 
 // Vendors
-@import 'assets/css/social-icons.css';
+@import 'assets/css/sass/vendors/font-awesome';
+@import 'assets/css/sass/vendors/tiagonoronha';
 
 // Components
 @import 'assets/css/sass/siteorigin';

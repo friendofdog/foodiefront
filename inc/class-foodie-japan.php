@@ -49,7 +49,7 @@ class Foodie_Japan_Site {
     wp_dequeue_style( 'storefront-child-style' );
     wp_dequeue_style( 'storefront-woocommerce-bookings-style' );
 
-    wp_enqueue_script( 'scripts', get_stylesheet_directory_uri() . '/scripts.min.js');
+    wp_enqueue_script( 'scripts', get_stylesheet_directory_uri() . '/scripts.min.js', '', '', true);
   }
 
   /**

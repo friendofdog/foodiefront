@@ -37,6 +37,6 @@
     "uglify-es": "3.3.9"
   },
   "dependencies": {
-    "gulp-eslint": "^6.0.0"
+    "gulp-eslint": "6.0.0"
   }
 }

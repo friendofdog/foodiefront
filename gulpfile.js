@@ -34,6 +34,9 @@ gulp.task('lint:sass', () => {
         'force-pseudo-nesting': 0,
         'force-element-nesting': 0,
         'no-css-comments': 0
+      },
+      'files':{
+        'ignore': 'assets/css/sass/vendors/*.scss'
       }
     }))
     .pipe(plumber())
@@ -115,4 +118,4 @@ gulp.task('watch', gulp.series('compile:sass', () => {
 /**
  * Default task executed by running `gulp`
  */
-gulp.task('default', gulp.series('watch'));
+gulp.task('default', gulp.series(['compile:js', 'compile:sass', 'watch']));
