@@ -8681,6 +8681,7 @@ dl.variation dd {
   .header-bottom {
     -webkit-filter: drop-shadow(0 7px 3px #687274);
     filter: drop-shadow(0 7px 3px #687274);
+    margin-top: -5px;
   }
 
   .header-bottom > div:first-child {
