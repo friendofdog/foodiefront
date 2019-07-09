@@ -10,7 +10,7 @@
       padding: 0 $nav-spacing * 2;
     }
 
-    .fj-preheader {
+    .preheader {
       display: none;
     }
   }
@@ -23,18 +23,23 @@
     margin-bottom: $base-spacing * 2.1;
   }
 
+  .header-bottom {
+    @include sloped-bottom(50, 'right', 'deep');
+
+    > div:first-child {
+      background-color: $brand-primary-dark;
+      height: 50px;
+      width: 100%;
+    }
+  }
+
   .storefront-secondary-navigation {
     .site-header {
-      @include jagged-border-bottom;
       background: transparent;
       border-bottom-color: transparent;
       padding-top: 0;
 
-      &::after {
-        filter: drop-shadow(0 7px 4px $grey);
-      }
-
-      .fj-preheader {
+      .preheader {
         @include span(12);
         background-color: $dark-background;
         display: inline-block;
@@ -61,8 +66,7 @@
       }
 
       .storefront-primary-navigation {
-        background-color: darken($brand-primary, 10%);
-        box-shadow: 10px 10px 5px $grey;
+        background-color: $brand-primary-dark;
         padding: 0 $nav-spacing;
 
         .main-navigation {
@@ -94,6 +98,7 @@
           .menu {
             li {
               .sub-menu {
+                background-image: linear-gradient(to bottom, $brand-primary-dark, $brand-primary);
                 opacity: 0;
                 top: 0;
               }
@@ -106,12 +111,6 @@
                   top: calc(100%);
                 }
               }
-            }
-          }
-
-          .menu {
-            .sub-menu {
-              background-image: linear-gradient(to bottom, darken($brand-primary, 10%), $brand-primary);
             }
           }
         }

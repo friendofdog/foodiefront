@@ -1,39 +1,39 @@
 @include susy-media($desktop) {
   .home {
-    .fj-hero-banner {
-      margin-top: $base-spacing * -2.5;
+    .hero-banner {
+      margin-top: $base-spacing * -3;
     }
   }
 
-  .fj-hero-banner-wrapper {
-    filter: drop-shadow(0 3px 3px $grey);
-  }
+  .hero-banner-wrapper {
+    @include sloped-bottom(96);
 
-  .fj-hero-banner {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
-    margin-bottom: 4.2358em;
-    padding: $base-spacing * 4 $base-spacing * 2;
+    .hero-banner {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-bottom: $base-spacing * 4;
+      min-height: 600px;
+      padding: $base-spacing * 4 $base-spacing * 2;
 
-    h1 {
-      color: $white;
-      font-size: $base-spacing * 2;
-      font-weight: 700;
-      margin-bottom: $base-spacing * 2;
-      text-align: center;
-    }
+      h1 {
+        @include text-center;
+        color: $white;
+        font-size: $base-spacing * 2;
+        font-weight: 700;
+        margin-bottom: $base-spacing * 2;
+      }
 
-    .banner-text {
-      color: $white;
-      font-size: $base-spacing;
-      margin-bottom: $base-spacing * 1.5;
-      text-align: center;
-    }
+      .banner-text {
+        @include text-center;
+        color: $white;
+        font-size: $base-spacing;
+        margin-bottom: $base-spacing * 1.5;
+      }
 
-    .button-wrapper {
-      @include center-text;
+      .button-wrapper {
+        @include text-center;
+      }
     }
   }
 }

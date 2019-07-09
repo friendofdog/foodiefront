@@ -30,7 +30,7 @@ class Foodie_Japan_Header {
    * @return void
    */
   public function header_adjustments() {
-    function fj_preheader_text() {
+    function preheader_text() {
       if ( is_active_sidebar( 'preheader_text' ) ) : ?>
       	<div id="preheader-text" class="preheader-text" role="complementary">
       		<?php dynamic_sidebar( 'preheader_text' ); ?>
@@ -38,11 +38,20 @@ class Foodie_Japan_Header {
       <?php endif;
     }
 
+    function header_bottom() {
+      ?>
+      <div class="header-bottom">
+        <div></div>
+      </div>
+      <?php
+    }
+
     remove_action( 'storefront_header', 'storefront_site_branding', 20);
     remove_action( 'storefront_header', 'storefront_product_search', 40);
 
-    add_action( 'storefront_header', 'fj_preheader_text', 25);
+    add_action( 'storefront_header', 'preheader_text', 25);
     add_action( 'storefront_header', 'storefront_site_branding', 45);
+    add_action( 'storefront_header', 'header_bottom', 70);
   }
 
   /**

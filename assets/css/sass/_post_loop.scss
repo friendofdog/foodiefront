@@ -28,10 +28,10 @@ $polaroid-spacing: $base-spacing / 3;
       padding-top: $base-spacing / 2;
 
       .text-title {
+        @include text-center;
         font-size: 1rem;
         margin-bottom: 0;
         padding: 0 $polaroid-spacing;
-        text-align: center;
 
         &::after {
           background: $grey;

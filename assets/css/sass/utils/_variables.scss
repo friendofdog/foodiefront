@@ -12,7 +12,7 @@ $brand-primary-dark:    darken($brand-primary, 10%);
 $brand-secondary:       $purple;
 
 // Storefront overwrites
-$color_woocommerce:     $purple;
+$color_woocommerce:     $purple; // sass-lint:disable-line variable-name-format
 
 $transition-fast:       150ms;
 $transition-normal:     300ms;

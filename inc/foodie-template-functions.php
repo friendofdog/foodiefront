@@ -4,7 +4,7 @@
  * Header
  */
 function storefront_header_container() {
-  echo '<div class="fj-preheader">';
+  echo '<div><div class="preheader">';
 }
 
 function storefront_header_container_close() {
@@ -16,5 +16,5 @@ function storefront_primary_navigation_wrapper() {
 }
 
 function storefront_primary_navigation_wrapper_close() {
-  echo '</div>';
+  echo '</div></div>';
 }

@@ -1,7 +1,3 @@
-@mixin center-text {
-  text-align: center;
-}
-
 @mixin nav-container {
   display: inline-block;
   margin-right: 0;
@@ -18,7 +14,7 @@
 }
 
 @mixin transition-visibility {
-  transition: top $transition-normal, opacity $transition-slow;
+  transition: top $transition-normal, opacity $transition-normal;
 }
 
 @mixin transition-transform {
@@ -27,6 +23,10 @@
 
 @mixin shadow-border-bottom {
   box-shadow: 0 0 10px 5px $brand-primary-dark;
+}
+
+@mixin text-center {
+  text-align: center;
 }
 
 @mixin jagged-border-bottom {
@@ -42,6 +42,22 @@
     position: relative;
     top: 0;
     width: 100%;
+  }
+}
+
+@mixin sloped-bottom($incline, $direction: left, $depth: shallow) {
+  $shape: (
+    right: '0 0, 100% 0, 100% 100%, 0 #{$incline}%',
+    left: '0 0, 100% 0, 100% #{$incline}%, 0 100%'
+  );
+  $shadow: (
+    shallow: 3,
+    deep: 7
+  );
+  filter: drop-shadow(0 #{map-get($shadow, $depth)}px 3px $grey);
+
+  > div:first-child {
+    clip-path: polygon(#{map-get($shape, $direction)});
   }
 }
 
