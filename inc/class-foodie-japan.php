@@ -26,14 +26,28 @@ class Foodie_Japan_Site {
     remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
     remove_action( 'admin_print_styles', 'print_emoji_styles' );
 
-    // disable Gutenberg editor
     add_filter( 'use_block_editor_for_post', '__return_false' );
+    add_filter( 'is_active_sidebar', array( $this, 'product_remove_sidebar'), 10, 2 );
 
     add_action( 'wp_enqueue_scripts', array( $this, 'styles_scripts_init' ), 30 );
     add_action( 'wp_enqueue_scripts', array( $this, 'customizer_styling_init' ), 150 );
     add_action( 'wp_enqueue_scripts', array( $this, 'siteorigin_panels_remove_inline_css'), 11 );
     add_action( 'init', array( $this, 'custom_post_types_init' ) );
     add_action( 'init', array( $this, 'custom_image_size_init' ) );
+  }
+
+  /**
+   * Remove sidebar from product page
+   * @return void
+   */
+  function product_remove_sidebar( $is_active_sidebar, $index ) {
+    if( $index !== "sidebar-1" ) {
+      return $is_active_sidebar;
+    }
+    if( ! is_product() ) {
+      return $is_active_sidebar;
+    }
+    return false;
   }
 
   /**
@@ -98,6 +112,7 @@ class Foodie_Japan_Site {
    */
   public function custom_image_size_init() {
     add_image_size( 'hero-banner', 1800, 600, array( 'center', 'center' ) );
+    add_image_size( 'photo-slider', 690, 460, array( 'center', 'center' ) );
   }
 }
 

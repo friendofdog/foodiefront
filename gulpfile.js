@@ -20,6 +20,7 @@ const SASS_SOURCES = [
 ];
 
 const JS_SOURCES = [
+  'assets/js/vendors/jquery.bxslider.js',
   'assets/js/*.js'
 ];
 
@@ -29,14 +30,14 @@ const JS_SOURCES = [
 gulp.task('lint:sass', () => {
   return gulp.src(SASS_SOURCES, { allowEmpty: true })
     .pipe(sassLint({
-      'rules':{
+      'rules': {
         'nesting-depth': 0,
         'force-pseudo-nesting': 0,
         'force-element-nesting': 0,
         'no-css-comments': 0,
         'no-important': 0
       },
-      'files':{
+      'files': {
         'ignore': 'assets/css/sass/vendors/*.scss'
       }
     }))
@@ -50,17 +51,20 @@ gulp.task('lint:sass', () => {
 gulp.task('lint:js', () => {
   return gulp.src(JS_SOURCES)
     .pipe(eslint({
-        rules: {
-          camelcase: 1
-        },
-        globals: [
-          'jQuery',
-          '$'
-        ],
-        envs: [
-          'es6',
-          'browser'
-        ]
+      files: {
+        ignore: 'node_modules/*'
+      },
+      rules: {
+        camelcase: 1
+      },
+      globals: [
+        'jQuery',
+        '$'
+      ],
+      envs: [
+        'es6',
+        'browser'
+      ]
     }))
     .pipe(eslint.formatEach('compact', process.stderr))
 });

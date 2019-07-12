@@ -1,3 +1,7 @@
 .text-center {
   @include text-center;
 }
+
+.hidden {
+  opacity: 0 !important;
+}

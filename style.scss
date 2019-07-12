@@ -25,10 +25,12 @@ Template: storefront
 // Vendors
 @import 'assets/css/sass/vendors/font-awesome';
 @import 'assets/css/sass/vendors/tiagonoronha';
+@import 'assets/css/vendors/jquery.bxslider.min';
 
 // Components
 @import 'assets/css/sass/classes';
 @import 'assets/css/sass/siteorigin';
+@import 'assets/css/sass/single_product';
 @import 'assets/css/sass/header';
 @import 'assets/css/sass/hero_banner';
 @import 'assets/css/sass/post_loop';

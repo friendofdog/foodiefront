@@ -9,8 +9,7 @@ $polaroid-spacing: $base-spacing / 3;
 
   .post-panel {
     @include grid-cell(.5, 4);
-    background-color: $polaroid;
-    box-shadow: 1px 2px 7px $grey;
+    @include polaroid;
     margin-bottom: $base-spacing / 2;
     outline: none !important;
     overflow-y: hidden;

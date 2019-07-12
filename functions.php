@@ -25,7 +25,7 @@ function inspect_styles() {
   echo '</pre>';
 }
 
-// add_action('init', 'get_all_image_sizes');
+// add_action('wp', 'get_all_image_sizes');
 function get_all_image_sizes(){
     global $_wp_additional_image_sizes;
     print '<pre>';

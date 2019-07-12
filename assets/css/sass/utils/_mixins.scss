@@ -14,7 +14,7 @@
 }
 
 @mixin transition-visibility {
-  transition: top $transition-normal, opacity $transition-normal;
+  transition: top $transition-normal, opacity $transition-normal ease-in-out;
 }
 
 @mixin transition-transform {
@@ -23,6 +23,11 @@
 
 @mixin shadow-border-bottom {
   box-shadow: 0 0 10px 5px $brand-primary-dark;
+}
+
+@mixin polaroid {
+  background: $polaroid;
+  box-shadow: 1px 2px 7px $grey;
 }
 
 @mixin text-center {
