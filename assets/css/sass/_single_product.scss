@@ -1,4 +1,52 @@
+// WooCommerce overwrites
+.wc-bookings-date-picker {
+  .ui-datepicker {
+    td.bookable {
+      a {
+        background-color: $brand-secondary !important;
+      }
+    }
+
+    td.ui-datepicker-current-day a,
+    td.bookable-range .ui-state-default {
+      background: darken($brand-secondary, 10%) !important;
+    }
+  }
+}
+
+.wc-bookings-booking-form {
+  .block-picker {
+    li {
+      a.selected, a:hover, a:focus {
+        background: $brand-secondary !important;
+        outline: none;
+      }
+    }
+  }
+}
+
+.related.products {
+  .type-product {
+    a:focus {
+      outline: none;
+    }
+  }
+}
+
+// custom styling
+.tour-summary {
+  background-color: $grey;
+  color: $white;
+  margin-bottom: $base-spacing;
+  padding: $base-spacing / 2 $base-spacing;
+  width: 100%;
+}
+
 .storefront-full-width-content.single-product {
+  .product-slider-wrapper {
+    padding-bottom: $base-spacing;
+  }
+
   .bx-wrapper {
     background: none;
     border: 0;
@@ -16,10 +64,10 @@
         margin: 0 0 1.41575em;
 
         li {
-          padding: 1rem;
+          padding: $base-spacing / 2;
 
           &:nth-child(4n-1) {
-            transform: rotate(-1deg);
+            transform: rotate(-3deg);
           }
 
           &:nth-child(4n) {
@@ -32,6 +80,14 @@
 
           &:nth-child(4n+2) {
             transform: rotate(3deg);
+          }
+
+          &.photo-first {
+            transform: rotate(3deg);
+          }
+
+          &.photo-last {
+            transform: rotate(-1deg);
           }
         }
 
@@ -63,9 +119,18 @@
 
 @include susy-media($desktop) {
   .storefront-full-width-content.single-product {
+    .product-slider-wrapper {
+      padding-bottom: $base-spacing;
+    }
+
     div.product {  // sass-lint:disable-line no-qualifying-elements
-      .product-media {
+      form.cart { // sass-lint:disable-line no-qualifying-elements
+        padding: 0;
+      }
+
+      .product-main-content {
         @include span(8 of 12);
+        margin-bottom: $base-spacing;
       }
 
       .summary {

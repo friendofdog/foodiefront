@@ -4626,6 +4626,38 @@ ul.bxslider {
   width: 100%;
 }
 
+.wc-bookings-date-picker .ui-datepicker td.bookable a {
+  background-color: #b530f0 !important;
+}
+
+.wc-bookings-date-picker .ui-datepicker td.ui-datepicker-current-day a,
+.wc-bookings-date-picker .ui-datepicker td.bookable-range .ui-state-default {
+  background: #9e10dd !important;
+}
+
+.wc-bookings-booking-form .block-picker li a.selected,
+.wc-bookings-booking-form .block-picker li a:hover,
+.wc-bookings-booking-form .block-picker li a:focus {
+  background: #b530f0 !important;
+  outline: none;
+}
+
+.related.products .type-product a:focus {
+  outline: none;
+}
+
+.tour-summary {
+  background-color: #687274;
+  color: #fff;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
+.storefront-full-width-content.single-product .product-slider-wrapper {
+  padding-bottom: 2rem;
+}
+
 .storefront-full-width-content.single-product .bx-wrapper {
   background: none;
   border: 0;
@@ -4650,8 +4682,8 @@ ul.bxslider {
 }
 
 .storefront-full-width-content.single-product .bx-wrapper .bx-viewport .product-slider li:nth-child(4n-1) {
-  -webkit-transform: rotate(-1deg);
-  transform: rotate(-1deg);
+  -webkit-transform: rotate(-3deg);
+  transform: rotate(-3deg);
 }
 
 .storefront-full-width-content.single-product .bx-wrapper .bx-viewport .product-slider li:nth-child(4n) {
@@ -4667,6 +4699,16 @@ ul.bxslider {
 .storefront-full-width-content.single-product .bx-wrapper .bx-viewport .product-slider li:nth-child(4n+2) {
   -webkit-transform: rotate(3deg);
   transform: rotate(3deg);
+}
+
+.storefront-full-width-content.single-product .bx-wrapper .bx-viewport .product-slider li.photo-first {
+  -webkit-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+
+.storefront-full-width-content.single-product .bx-wrapper .bx-viewport .product-slider li.photo-last {
+  -webkit-transform: rotate(-1deg);
+  transform: rotate(-1deg);
 }
 
 .storefront-full-width-content.single-product .bx-wrapper .bx-viewport .product-slider .product-photo {
@@ -8927,10 +8969,19 @@ ul.bxslider {
     margin-right: 2rem;
   }
 
-  .storefront-full-width-content.single-product div.product .product-media {
+  .storefront-full-width-content.single-product .product-slider-wrapper {
+    padding-bottom: 2rem;
+  }
+
+  .storefront-full-width-content.single-product div.product form.cart {
+    padding: 0;
+  }
+
+  .storefront-full-width-content.single-product div.product .product-main-content {
     width: 65.21739%;
     float: left;
     margin-right: 4.34783%;
+    margin-bottom: 2rem;
   }
 
   .storefront-full-width-content.single-product div.product .summary {
