@@ -1,5 +1,7 @@
 // WooCommerce overwrites
 .wc-bookings-date-picker {
+  background-color: $white;
+
   .ui-datepicker {
     td.bookable {
       a {
@@ -9,131 +11,265 @@
 
     td.ui-datepicker-current-day a,
     td.bookable-range .ui-state-default {
-      background: darken($brand-secondary, 10%) !important;
+      background: $brand-secondary-dark !important;
     }
   }
 }
 
 .wc-bookings-booking-form {
+  label {
+    margin-right: $base-spacing / 4;
+  }
+
   .block-picker {
+    margin: 0 0 $base-spacing / 2;
+
     li {
-      a.selected, a:hover, a:focus {
+      a.selected,
+      a:hover,
+      a:focus {
         background: $brand-secondary !important;
         outline: none;
       }
     }
   }
-}
 
-.related.products {
-  .type-product {
-    a:focus {
-      outline: none;
+  .form-field {
+    display: inline-block;
+    margin: 0 0 $base-spacing / 4;
+
+    > .full-width {
+      display: flex;
+    }
+
+    .person-description {
+      color: $black;
+      font-size: .9rem;
+    }
+
+    input {
+      &[type] {
+        margin-left: auto;
+        max-height: 45px;
+        padding: $base-spacing / 4;
+        width: auto;
+      }
     }
   }
 }
 
 // custom styling
-.tour-summary {
-  background-color: $grey;
-  color: $white;
-  margin-bottom: $base-spacing;
-  padding: $base-spacing / 2 $base-spacing;
-  width: 100%;
-}
-
 .storefront-full-width-content.single-product {
-  .product-slider-wrapper {
-    padding-bottom: $base-spacing;
-  }
-
-  .bx-wrapper {
-    background: none;
-    border: 0;
-    box-shadow: none;
-
-    .bx-next, .bx-prev {
-      color: $grey;
-      margin-top: 8px;
-      text-indent: unset;
-      top: auto;
+  div.product {
+    .product-main-wrapper,
+    .summary {
+      margin-bottom: $base-spacing;
     }
 
-    .bx-viewport {
-      .product-slider {
-        margin: 0 0 1.41575em;
+    .entry-summary {
+      @include sloped-bottom(2, 'trapezoid', 'shallow');
+      padding: $base-spacing / 4;
 
-        li {
-          padding: $base-spacing / 2;
+      .cart {
+        background-color: $brand-primary;
+        color: $black;
+        padding: $base-spacing / 2;
 
-          &:nth-child(4n-1) {
-            transform: rotate(-3deg);
-          }
-
-          &:nth-child(4n) {
-            transform: rotate(2deg);
-          }
-
-          &:nth-child(4n+1) {
-            transform: rotate(-2deg);
-          }
-
-          &:nth-child(4n+2) {
-            transform: rotate(3deg);
-          }
-
-          &.photo-first {
-            transform: rotate(3deg);
-          }
-
-          &.photo-last {
-            transform: rotate(-1deg);
-          }
+        .ui-datepicker-calendar {
+          background-color: $white;
         }
 
-        .product-photo {
-          @include polaroid;
-          border: 5px solid $polaroid;
+        .wc-bookings-date-picker {
+          background-color: $brand-primary;
+        }
+
+        .wc-bookings-booking-form-button {
+          background-color: $brand-secondary;
+          border-color: $brand-secondary;
+          color: $black;
+          display: block;
           margin: auto;
-          padding: 2px 3px;
-          width: 80%;
         }
+      }
+    }
 
-        .bx-caption {
-          background-color: $polaroid;
-          height: 41px;
-          position: relative;
+    .tour-header {
+      @include text-shadow;
+      background-color: $brand-secondary;
+      border-radius: 5px 5px 0 0;
+      box-shadow: 0 3px 3px $grey;
+      color: $white;
+      margin: $base-spacing * -.5 $base-spacing * -.5 $base-spacing * .5;
+      padding: $base-spacing / 4 $base-spacing / 4 $base-spacing / 2;
+    }
+
+    .tour-switcher-wrapper {
+      margin: $base-spacing * -.5 $base-spacing * -.5 $base-spacing * 1.5;
+
+      .tour-switcher {
+        border-radius: 5px 5px 0 0;
+        color: $white;
+        display: flex;
+
+        > a {
+          @include span(6 inside no-gutters);
+          @include transition-transform;
+          background-color: $brand-secondary;
+          clip-path: polygon(0 0, 100% 0, 100% 80%, 0 90%);
+          color: $white;
+          cursor: pointer;
+          display: inline-block;
+          opacity: .8;
+          outline: none;
+          padding: $base-spacing * .75;
           text-align: center;
 
-          span {
-            color: darken($grey, 10%);
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
+          &.active {
+            background-color: $brand-secondary;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            cursor: default;
+            margin-bottom: $base-spacing * -.5;
+            opacity: 1;
           }
         }
       }
     }
-  }
-}
 
-@include susy-media($desktop) {
-  .storefront-full-width-content.single-product {
+    .product-tour-wrapper {
+      padding: $base-spacing / 4;
+
+      .product-tour {
+        @include box-shadow;
+        background-color: $white;
+        border-radius: 5px;
+        margin-bottom: $base-spacing;
+        padding: $base-spacing / 2;
+
+        h4 {
+          font-size: 1.2rem;
+          margin: 0;
+        }
+
+        .detail-item {
+          margin-bottom: $base-spacing / 2;
+        }
+
+        .tour-content-wrapper {
+          &::after {
+            clear: both;
+            content: '';
+            display: block;
+            height: 0;
+            line-height: 0;
+            visibility: hidden;
+          }
+
+          .tour-content {
+            float: left;
+            height: auto;
+            max-height: 1000px;
+            overflow: hidden;
+            transform: scaleY(1);
+            transform-origin: top;
+            transition: transform $transition-slow ease-out, max-height $transition-slow ease-out;
+            width: 100%;
+          }
+        }
+      }
+    }
+
     .product-slider-wrapper {
       padding-bottom: $base-spacing;
     }
 
-    div.product {  // sass-lint:disable-line no-qualifying-elements
-      form.cart { // sass-lint:disable-line no-qualifying-elements
-        padding: 0;
+    .bx-wrapper {
+      background: none;
+      border: 0;
+      box-shadow: none;
+
+      .bx-next,
+      .bx-prev {
+        color: $grey;
+        margin-top: 8px;
+        text-indent: unset;
+        top: auto;
       }
 
-      .product-main-content {
+      .bx-viewport {
+        .product-slider {
+          margin: 0 0 1.41575em;
+
+          li {
+            padding: $base-spacing;
+
+            &:nth-child(4n-1) {
+              transform: rotate(-3deg);
+            }
+
+            &:nth-child(4n) {
+              transform: rotate(2deg);
+            }
+
+            &:nth-child(4n+1) {
+              transform: rotate(-2deg);
+            }
+
+            &:nth-child(4n+2) {
+              transform: rotate(3deg);
+            }
+
+            &.photo-first {
+              transform: rotate(3deg);
+            }
+
+            &.photo-last {
+              transform: rotate(-1deg);
+            }
+          }
+
+          .product-photo {
+            @include polaroid;
+            border: 5px solid $polaroid;
+            margin: auto;
+            padding: 2px 3px;
+            width: 80%;
+          }
+
+          .bx-caption {
+            background-color: $polaroid;
+            height: 41px;
+            position: relative;
+            text-align: center;
+
+            span {
+              color: darken($grey, 10%);
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+    }
+
+    .related.products {
+      .type-product {
+        a:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+@include susy-media($desktop-large) {
+  .storefront-full-width-content.single-product {
+    div.product {
+      .product-main-wrapper {
         @include span(8 of 12);
-        margin-bottom: $base-spacing;
       }
 
-      .summary {
+      .entry-summary {
         @include span(last 4 of 12);
       }
     }

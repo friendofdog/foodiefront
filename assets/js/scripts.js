@@ -8,5 +8,22 @@
     }) ).then(function() {
       $('.product-slider').removeClass('hidden');
     });
+
+    $('.tour-trigger').on('click touchstart', function(e) {
+      e.preventDefault();
+      var clicked = $(this);
+      var targetId = clicked.attr('data-target');
+      var target = $('#' + targetId);
+
+      if (clicked.hasClass('active')) {
+        return false;
+      }
+
+      clicked.siblings().removeClass('active');
+      clicked.addClass('active');
+
+      target.removeClass('toggle');
+      target.siblings().addClass('toggle');
+    });
   });
 })( jQuery );

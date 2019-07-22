@@ -1,9 +1,11 @@
+$desktop-large:         992px;
+
 $grey:                  #687274;
 $light-grey:            #f5fafa;
 $turquoise:             #3ed7e0;
 $purple:                #b530f0;
 $white:                 #fff;
-$black:                 #000;
+$black:                 #333;
 $polaroid:              #f1f1f1;
 
 $dark-background:       $grey;
@@ -11,13 +13,14 @@ $light-text:            $light-grey;
 $brand-primary:         $turquoise;
 $brand-primary-dark:    darken($brand-primary, 10%);
 $brand-secondary:       $purple;
+$brand-secondary-dark:  darken($brand-secondary, 10%);
 
 // Storefront overwrites
 $color_woocommerce:     $purple; // sass-lint:disable-line variable-name-format
 
 $transition-fast:       150ms;
 $transition-normal:     300ms;
-$transition-slow:       450ms;
+$transition-slow:       500ms;
 
 $base-spacing:          2rem;
 $nav-spacing:           $base-spacing / 2;

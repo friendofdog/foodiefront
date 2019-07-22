@@ -18,16 +18,24 @@
 }
 
 @mixin transition-transform {
-  transition: transform $transition-normal;
+  transition: transform $transition-normal, clip-path $transition-normal;
 }
 
 @mixin shadow-border-bottom {
   box-shadow: 0 0 10px 5px $brand-primary-dark;
 }
 
-@mixin polaroid {
-  background: $polaroid;
+@mixin box-shadow {
   box-shadow: 1px 2px 7px $grey;
+}
+
+@mixin text-shadow {
+  text-shadow: 1px 1px $grey;
+}
+
+@mixin polaroid {
+  @include box-shadow;
+  background: $polaroid;
 }
 
 @mixin text-center {
@@ -53,7 +61,8 @@
 @mixin sloped-bottom($incline, $direction: left, $depth: shallow) {
   $shape: (
     right: '0 0, 100% 0, 100% 100%, 0 #{$incline}%',
-    left: '0 0, 100% 0, 100% #{$incline}%, 0 100%'
+    left: '0 0, 100% 0, 100% #{$incline}%, 0 100%',
+    trapezoid: '#{$incline}% #{$incline / 2}%, #{100 - $incline}% 0, 100% 100%, 0 100%'
   );
   $shadow: (
     shallow: 3,
@@ -61,7 +70,8 @@
   );
   filter: drop-shadow(0 #{map-get($shadow, $depth)}px 3px $grey);
 
-  > div:first-child {
+  > div:first-child,
+  form {
     clip-path: polygon(#{map-get($shape, $direction)});
   }
 }

@@ -1,7 +1,33 @@
+.full-width {
+  display: inline-block;
+  width: 100%;
+}
+
 .text-center {
   @include text-center;
 }
 
 .hidden {
   opacity: 0 !important;
+}
+
+.toggle {
+  margin-left: -100%;
+  max-height: 0 !important;
+  opacity: 0 !important;
+  transform: scaleY(0) !important;
+}
+
+h1.page-title {
+  @extend .text-center;
+  @include text-shadow;
+  @include susy-media($desktop) {
+    font-size: 4rem;
+  }
+
+  color: $brand-primary-dark;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: $base-spacing * 2;
 }
