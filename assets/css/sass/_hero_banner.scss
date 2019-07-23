@@ -1,39 +1,37 @@
-@include susy-media($desktop) {
-  .home {
-    .hero-banner {
-      margin-top: ($base-spacing * -3);
-    }
+.home {
+  .hero-banner {
+    margin-top: ($base-spacing * -3);
   }
+}
 
-  .hero-banner-wrapper {
-    @include sloped-bottom(96);
+.hero-banner-wrapper {
+  @include sloped-bottom(96);
 
-    .hero-banner {
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      margin-bottom: ($spacing-double * 2);
-      min-height: 600px;
-      padding: ($spacing-double * 2) $spacing-double;
+  .hero-banner {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: ($spacing-double * 2);
+    min-height: 600px;
+    padding: ($spacing-double * 2) $spacing-double;
 
-      h1 {
-        @include text-center;
-        color: $white;
-        font-size: $spacing-double;
-        font-weight: 700;
-        margin-bottom: $spacing-double;
-      }
+    h1 {
+      @include text-center;
+      color: $white;
+      font-size: $spacing-double;
+      font-weight: 700;
+      margin-bottom: $spacing-double;
+    }
 
-      .banner-text {
-        @include text-center;
-        color: $white;
-        font-size: $base-spacing;
-        margin-bottom: $spacing-onehalf;
-      }
+    .banner-text {
+      @include text-center;
+      color: $white;
+      font-size: $base-spacing;
+      margin-bottom: $spacing-onehalf;
+    }
 
-      .button-wrapper {
-        @include text-center;
-      }
+    .button-wrapper {
+      @include text-center;
     }
   }
 }

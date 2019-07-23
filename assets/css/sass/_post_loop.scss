@@ -1,13 +1,17 @@
 .posts-grid {
-  @include slant;
+  @include polaroid-grid;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
 
+  .post-panel-wrapper {
+    @include span(6 inside);
+  }
+
   .post-panel {
-    @include grid-cell(.5, 4);
     @include polaroid;
+    display: block;
     margin-bottom: $spacing-half;
     outline: none !important;
     overflow-y: hidden;
@@ -47,6 +51,14 @@
       border-radius: 0;
       margin-bottom: 0;
       padding: $spacing-third;
+    }
+  }
+}
+
+@include susy-media($desktop) {
+  .posts-grid {
+    .post-panel-wrapper {
+      @include span(4 inside);
     }
   }
 }

@@ -4951,6 +4951,49 @@ h1.page-title {
   display: none;
 }
 
+.home .hero-banner {
+  margin-top: -6rem;
+}
+
+.hero-banner-wrapper {
+  -webkit-filter: drop-shadow(0 3px 3px #687274);
+  filter: drop-shadow(0 3px 3px #687274);
+}
+
+.hero-banner-wrapper > div:first-child,
+.hero-banner-wrapper form {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+}
+
+.hero-banner-wrapper .hero-banner {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 8rem;
+  min-height: 600px;
+  padding: 8rem 4rem;
+}
+
+.hero-banner-wrapper .hero-banner h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+}
+
+.hero-banner-wrapper .hero-banner .banner-text {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.hero-banner-wrapper .hero-banner .button-wrapper {
+  text-align: center;
+}
+
 .posts-grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4959,2170 +5002,367 @@ h1.page-title {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(1) {
+.posts-grid .post-panel-wrapper:nth-child(1) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
   transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(-5deg) translate(0, 16px);
-  transform: rotate(-5deg) translate(0, 16px);
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(1):hover {
-  -webkit-transform: rotate(calc(-5deg + 1deg)) translate(0, calc(16px - 3px));
-  transform: rotate(calc(-5deg + 1deg)) translate(0, calc(16px - 3px));
+.posts-grid .post-panel-wrapper:nth-child(1) a:hover {
+  -webkit-transform: rotate(calc(-5deg + 1deg));
+  transform: rotate(calc(-5deg + 1deg));
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(2) {
+.posts-grid .post-panel-wrapper:nth-child(2) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
   transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(4deg) translate(0, -20px);
-  transform: rotate(4deg) translate(0, -20px);
+  -webkit-transform: rotate(4deg);
+  transform: rotate(4deg);
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(2):hover {
-  -webkit-transform: rotate(calc(4deg + 1deg)) translate(0, calc(-20px - 3px));
-  transform: rotate(calc(4deg + 1deg)) translate(0, calc(-20px - 3px));
+.posts-grid .post-panel-wrapper:nth-child(2) a:hover {
+  -webkit-transform: rotate(calc(4deg + 1deg));
+  transform: rotate(calc(4deg + 1deg));
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(3) {
+.posts-grid .post-panel-wrapper:nth-child(3) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
   transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(-2deg) translate(0, 16px);
-  transform: rotate(-2deg) translate(0, 16px);
+  -webkit-transform: rotate(-2deg);
+  transform: rotate(-2deg);
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(3):hover {
-  -webkit-transform: rotate(calc(-2deg + 1deg)) translate(0, calc(16px - 3px));
-  transform: rotate(calc(-2deg + 1deg)) translate(0, calc(16px - 3px));
+.posts-grid .post-panel-wrapper:nth-child(3) a:hover {
+  -webkit-transform: rotate(calc(-2deg + 1deg));
+  transform: rotate(calc(-2deg + 1deg));
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(4) {
+.posts-grid .post-panel-wrapper:nth-child(4) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
   transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(6deg) translate(0, px);
-  transform: rotate(6deg) translate(0, px);
+  -webkit-transform: rotate(6deg);
+  transform: rotate(6deg);
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(4):hover {
-  -webkit-transform: rotate(calc(6deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(6deg + 1deg)) translate(0, calc(px - 3px));
+.posts-grid .post-panel-wrapper:nth-child(4) a:hover {
+  -webkit-transform: rotate(calc(6deg + 1deg));
+  transform: rotate(calc(6deg + 1deg));
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(5) {
+.posts-grid .post-panel-wrapper:nth-child(5) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
   transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(3deg) translate(0, px);
-  transform: rotate(3deg) translate(0, px);
+  -webkit-transform: rotate(3deg);
+  transform: rotate(3deg);
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(5):hover {
-  -webkit-transform: rotate(calc(3deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(3deg + 1deg)) translate(0, calc(px - 3px));
+.posts-grid .post-panel-wrapper:nth-child(5) a:hover {
+  -webkit-transform: rotate(calc(3deg + 1deg));
+  transform: rotate(calc(3deg + 1deg));
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(6) {
+.posts-grid .post-panel-wrapper:nth-child(6) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
   transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(6):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
+.posts-grid .post-panel-wrapper:nth-child(6) a:hover {
+  -webkit-transform: rotate(calc(-5deg + 1deg));
+  transform: rotate(calc(-5deg + 1deg));
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(7) {
+.posts-grid .post-panel-wrapper:nth-child(7) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
   transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
+  -webkit-transform: rotate(4deg);
+  transform: rotate(4deg);
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(7):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
+.posts-grid .post-panel-wrapper:nth-child(7) a:hover {
+  -webkit-transform: rotate(calc(4deg + 1deg));
+  transform: rotate(calc(4deg + 1deg));
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(8) {
+.posts-grid .post-panel-wrapper:nth-child(8) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
   transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
+  -webkit-transform: rotate(-2deg);
+  transform: rotate(-2deg);
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(8):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
+.posts-grid .post-panel-wrapper:nth-child(8) a:hover {
+  -webkit-transform: rotate(calc(-2deg + 1deg));
+  transform: rotate(calc(-2deg + 1deg));
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(9) {
+.posts-grid .post-panel-wrapper:nth-child(9) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
   transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
+  -webkit-transform: rotate(6deg);
+  transform: rotate(6deg);
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(9):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
+.posts-grid .post-panel-wrapper:nth-child(9) a:hover {
+  -webkit-transform: rotate(calc(6deg + 1deg));
+  transform: rotate(calc(6deg + 1deg));
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(10) {
+.posts-grid .post-panel-wrapper:nth-child(10) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
   transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
+  -webkit-transform: rotate(3deg);
+  transform: rotate(3deg);
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(10):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
+.posts-grid .post-panel-wrapper:nth-child(10) a:hover {
+  -webkit-transform: rotate(calc(3deg + 1deg));
+  transform: rotate(calc(3deg + 1deg));
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(11) {
+.posts-grid .post-panel-wrapper:nth-child(11) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
   transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(11):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
+.posts-grid .post-panel-wrapper:nth-child(11) a:hover {
+  -webkit-transform: rotate(calc(-5deg + 1deg));
+  transform: rotate(calc(-5deg + 1deg));
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(12) {
+.posts-grid .post-panel-wrapper:nth-child(12) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
   transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
+  -webkit-transform: rotate(4deg);
+  transform: rotate(4deg);
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(12):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
+.posts-grid .post-panel-wrapper:nth-child(12) a:hover {
+  -webkit-transform: rotate(calc(4deg + 1deg));
+  transform: rotate(calc(4deg + 1deg));
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(13) {
+.posts-grid .post-panel-wrapper:nth-child(13) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
   transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
+  -webkit-transform: rotate(-2deg);
+  transform: rotate(-2deg);
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(13):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
+.posts-grid .post-panel-wrapper:nth-child(13) a:hover {
+  -webkit-transform: rotate(calc(-2deg + 1deg));
+  transform: rotate(calc(-2deg + 1deg));
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(14) {
+.posts-grid .post-panel-wrapper:nth-child(14) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
   transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
+  -webkit-transform: rotate(6deg);
+  transform: rotate(6deg);
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(14):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
+.posts-grid .post-panel-wrapper:nth-child(14) a:hover {
+  -webkit-transform: rotate(calc(6deg + 1deg));
+  transform: rotate(calc(6deg + 1deg));
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(15) {
+.posts-grid .post-panel-wrapper:nth-child(15) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
   transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
+  -webkit-transform: rotate(3deg);
+  transform: rotate(3deg);
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(15):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
+.posts-grid .post-panel-wrapper:nth-child(15) a:hover {
+  -webkit-transform: rotate(calc(3deg + 1deg));
+  transform: rotate(calc(3deg + 1deg));
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(16) {
+.posts-grid .post-panel-wrapper:nth-child(16) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
   transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(16):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
+.posts-grid .post-panel-wrapper:nth-child(16) a:hover {
+  -webkit-transform: rotate(calc(-5deg + 1deg));
+  transform: rotate(calc(-5deg + 1deg));
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(17) {
+.posts-grid .post-panel-wrapper:nth-child(17) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
   transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
+  -webkit-transform: rotate(4deg);
+  transform: rotate(4deg);
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(17):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
+.posts-grid .post-panel-wrapper:nth-child(17) a:hover {
+  -webkit-transform: rotate(calc(4deg + 1deg));
+  transform: rotate(calc(4deg + 1deg));
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(18) {
+.posts-grid .post-panel-wrapper:nth-child(18) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
   transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
+  -webkit-transform: rotate(-2deg);
+  transform: rotate(-2deg);
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(18):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
+.posts-grid .post-panel-wrapper:nth-child(18) a:hover {
+  -webkit-transform: rotate(calc(-2deg + 1deg));
+  transform: rotate(calc(-2deg + 1deg));
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(19) {
+.posts-grid .post-panel-wrapper:nth-child(19) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
   transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
+  -webkit-transform: rotate(6deg);
+  transform: rotate(6deg);
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(19):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
+.posts-grid .post-panel-wrapper:nth-child(19) a:hover {
+  -webkit-transform: rotate(calc(6deg + 1deg));
+  transform: rotate(calc(6deg + 1deg));
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(20) {
+.posts-grid .post-panel-wrapper:nth-child(20) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
   transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
+  -webkit-transform: rotate(3deg);
+  transform: rotate(3deg);
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(20):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
+.posts-grid .post-panel-wrapper:nth-child(20) a:hover {
+  -webkit-transform: rotate(calc(3deg + 1deg));
+  transform: rotate(calc(3deg + 1deg));
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(21) {
+.posts-grid .post-panel-wrapper:nth-child(21) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
   transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(21):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
+.posts-grid .post-panel-wrapper:nth-child(21) a:hover {
+  -webkit-transform: rotate(calc(-5deg + 1deg));
+  transform: rotate(calc(-5deg + 1deg));
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(22) {
+.posts-grid .post-panel-wrapper:nth-child(22) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
   transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
+  -webkit-transform: rotate(4deg);
+  transform: rotate(4deg);
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(22):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
+.posts-grid .post-panel-wrapper:nth-child(22) a:hover {
+  -webkit-transform: rotate(calc(4deg + 1deg));
+  transform: rotate(calc(4deg + 1deg));
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(23) {
+.posts-grid .post-panel-wrapper:nth-child(23) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
   transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
+  -webkit-transform: rotate(-2deg);
+  transform: rotate(-2deg);
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(23):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
+.posts-grid .post-panel-wrapper:nth-child(23) a:hover {
+  -webkit-transform: rotate(calc(-2deg + 1deg));
+  transform: rotate(calc(-2deg + 1deg));
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(24) {
+.posts-grid .post-panel-wrapper:nth-child(24) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
   transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
+  -webkit-transform: rotate(6deg);
+  transform: rotate(6deg);
 }
 
-.posts-grid:nth-child(1) .post-panel:nth-child(24):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
+.posts-grid .post-panel-wrapper:nth-child(24) a:hover {
+  -webkit-transform: rotate(calc(6deg + 1deg));
+  transform: rotate(calc(6deg + 1deg));
 }
 
-.posts-grid:nth-child(2) .post-panel:nth-child(1) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(4deg) translate(0, 16px);
-  transform: rotate(4deg) translate(0, 16px);
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(1):hover {
-  -webkit-transform: rotate(calc(4deg + 1deg)) translate(0, calc(16px - 3px));
-  transform: rotate(calc(4deg + 1deg)) translate(0, calc(16px - 3px));
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(2) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(-2deg) translate(0, -20px);
-  transform: rotate(-2deg) translate(0, -20px);
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(2):hover {
-  -webkit-transform: rotate(calc(-2deg + 1deg)) translate(0, calc(-20px - 3px));
-  transform: rotate(calc(-2deg + 1deg)) translate(0, calc(-20px - 3px));
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(3) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(6deg) translate(0, 16px);
-  transform: rotate(6deg) translate(0, 16px);
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(3):hover {
-  -webkit-transform: rotate(calc(6deg + 1deg)) translate(0, calc(16px - 3px));
-  transform: rotate(calc(6deg + 1deg)) translate(0, calc(16px - 3px));
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(4) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(3deg) translate(0, px);
-  transform: rotate(3deg) translate(0, px);
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(4):hover {
-  -webkit-transform: rotate(calc(3deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(3deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(5) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(5):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(6) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(6):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(7) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(7):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(8) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(8):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(9) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(9):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(10) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(10):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(11) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(11):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(12) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(12):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(13) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(13):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(14) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(14):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(15) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(15):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(16) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(16):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(17) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(17):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(18) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(18):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(19) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(19):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(20) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(20):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(21) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(21):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(22) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(22):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(23) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(23):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(24) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(2) .post-panel:nth-child(24):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(1) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(-2deg) translate(0, 16px);
-  transform: rotate(-2deg) translate(0, 16px);
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(1):hover {
-  -webkit-transform: rotate(calc(-2deg + 1deg)) translate(0, calc(16px - 3px));
-  transform: rotate(calc(-2deg + 1deg)) translate(0, calc(16px - 3px));
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(2) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(6deg) translate(0, -20px);
-  transform: rotate(6deg) translate(0, -20px);
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(2):hover {
-  -webkit-transform: rotate(calc(6deg + 1deg)) translate(0, calc(-20px - 3px));
-  transform: rotate(calc(6deg + 1deg)) translate(0, calc(-20px - 3px));
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(3) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(3deg) translate(0, 16px);
-  transform: rotate(3deg) translate(0, 16px);
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(3):hover {
-  -webkit-transform: rotate(calc(3deg + 1deg)) translate(0, calc(16px - 3px));
-  transform: rotate(calc(3deg + 1deg)) translate(0, calc(16px - 3px));
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(4) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(4):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(5) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(5):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(6) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(6):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(7) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(7):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(8) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(8):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(9) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(9):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(10) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(10):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(11) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(11):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(12) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(12):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(13) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(13):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(14) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(14):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(15) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(15):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(16) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(16):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(17) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(17):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(18) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(18):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(19) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(19):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(20) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(20):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(21) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(21):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(22) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(22):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(23) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(23):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(24) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(3) .post-panel:nth-child(24):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(1) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(6deg) translate(0, 16px);
-  transform: rotate(6deg) translate(0, 16px);
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(1):hover {
-  -webkit-transform: rotate(calc(6deg + 1deg)) translate(0, calc(16px - 3px));
-  transform: rotate(calc(6deg + 1deg)) translate(0, calc(16px - 3px));
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(2) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(3deg) translate(0, -20px);
-  transform: rotate(3deg) translate(0, -20px);
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(2):hover {
-  -webkit-transform: rotate(calc(3deg + 1deg)) translate(0, calc(-20px - 3px));
-  transform: rotate(calc(3deg + 1deg)) translate(0, calc(-20px - 3px));
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(3) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, 16px);
-  transform: rotate(deg) translate(0, 16px);
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(3):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(16px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(16px - 3px));
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(4) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(4):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(5) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(5):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(6) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(6):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(7) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(7):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(8) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(8):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(9) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(9):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(10) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(10):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(11) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(11):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(12) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(12):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(13) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(13):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(14) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(14):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(15) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(15):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(16) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(16):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(17) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(17):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(18) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(18):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(19) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(19):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(20) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(20):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(21) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(21):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(22) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(22):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(23) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(23):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(24) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(4) .post-panel:nth-child(24):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(1) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(3deg) translate(0, 16px);
-  transform: rotate(3deg) translate(0, 16px);
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(1):hover {
-  -webkit-transform: rotate(calc(3deg + 1deg)) translate(0, calc(16px - 3px));
-  transform: rotate(calc(3deg + 1deg)) translate(0, calc(16px - 3px));
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(2) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, -20px);
-  transform: rotate(deg) translate(0, -20px);
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(2):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(-20px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(-20px - 3px));
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(3) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, 16px);
-  transform: rotate(deg) translate(0, 16px);
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(3):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(16px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(16px - 3px));
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(4) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(4):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(5) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(5):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(6) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(6):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(7) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(7):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(8) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(8):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(9) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(9):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(10) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(10):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(11) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(11):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(12) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(12):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(13) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(13):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(14) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(14):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(15) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(15):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(16) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(16):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(17) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(17):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(18) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(18):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(19) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(19):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(20) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(20):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(21) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(21):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(22) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(22):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(23) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(23):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(24) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(5) .post-panel:nth-child(24):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(1) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, 16px);
-  transform: rotate(deg) translate(0, 16px);
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(1):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(16px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(16px - 3px));
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(2) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, -20px);
-  transform: rotate(deg) translate(0, -20px);
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(2):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(-20px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(-20px - 3px));
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(3) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, 16px);
-  transform: rotate(deg) translate(0, 16px);
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(3):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(16px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(16px - 3px));
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(4) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(4):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(5) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(5):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(6) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(6):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(7) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(7):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(8) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(8):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(9) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(9):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(10) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(10):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(11) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(11):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(12) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(12):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(13) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(13):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(14) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(14):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(15) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(15):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(16) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(16):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(17) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(17):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(18) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(18):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(19) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(19):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(20) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(20):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(21) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(21):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(22) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(22):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(23) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(23):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(24) {
-  -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms;
-  transition: transform 300ms, clip-path 300ms, -webkit-transform 300ms, -webkit-clip-path 300ms;
-  -webkit-transform: rotate(deg) translate(0, px);
-  transform: rotate(deg) translate(0, px);
-}
-
-.posts-grid:nth-child(6) .post-panel:nth-child(24):hover {
-  -webkit-transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
-  transform: rotate(calc(deg + 1deg)) translate(0, calc(px - 3px));
+.posts-grid .post-panel-wrapper {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+  padding-left: 2.08333%;
+  padding-right: 2.08333%;
 }
 
 .posts-grid .post-panel {
   -webkit-box-shadow: 1px 2px 7px #687274;
   box-shadow: 1px 2px 7px #687274;
   background: #f1f1f1;
+  display: block;
   margin-bottom: 1rem;
   outline: none !important;
   overflow-y: hidden;
   text-decoration: none !important;
-}
-
-.posts-grid .post-panel:first-child:nth-last-child(1),
-.posts-grid .post-panel:first-child:nth-last-child(1) ~ * {
-  width: 25%;
-}
-
-.posts-grid .post-panel:first-child:nth-last-child(2),
-.posts-grid .post-panel:first-child:nth-last-child(2) ~ * {
-  width: 25%;
-}
-
-.posts-grid .post-panel:first-child:nth-last-child(3),
-.posts-grid .post-panel:first-child:nth-last-child(3) ~ * {
-  width: 25%;
-}
-
-.posts-grid .post-panel:first-child:nth-last-child(4),
-.posts-grid .post-panel:first-child:nth-last-child(4) ~ * {
-  width: 25%;
-}
-
-.posts-grid .post-panel:first-child:nth-last-child(5),
-.posts-grid .post-panel:first-child:nth-last-child(5) ~ * {
-  width: 25%;
-}
-
-.posts-grid .post-panel:first-child:nth-last-child(6),
-.posts-grid .post-panel:first-child:nth-last-child(6) ~ * {
-  width: 25%;
-}
-
-.posts-grid .post-panel:first-child:nth-last-child(7),
-.posts-grid .post-panel:first-child:nth-last-child(7) ~ * {
-  width: 25%;
-}
-
-.posts-grid .post-panel:first-child:nth-last-child(8),
-.posts-grid .post-panel:first-child:nth-last-child(8) ~ * {
-  width: 25%;
-}
-
-.posts-grid .post-panel:first-child:nth-last-child(9),
-.posts-grid .post-panel:first-child:nth-last-child(9) ~ * {
-  width: 25%;
-}
-
-.posts-grid .post-panel:first-child:nth-last-child(10),
-.posts-grid .post-panel:first-child:nth-last-child(10) ~ * {
-  width: 25%;
-}
-
-.posts-grid .post-panel:first-child:nth-last-child(11),
-.posts-grid .post-panel:first-child:nth-last-child(11) ~ * {
-  width: 25%;
-}
-
-.posts-grid .post-panel:first-child:nth-last-child(12),
-.posts-grid .post-panel:first-child:nth-last-child(12) ~ * {
-  width: 25%;
-}
-
-.posts-grid .post-panel:first-child:nth-last-child(13),
-.posts-grid .post-panel:first-child:nth-last-child(13) ~ * {
-  width: 25%;
-}
-
-.posts-grid .post-panel:first-child:nth-last-child(14),
-.posts-grid .post-panel:first-child:nth-last-child(14) ~ * {
-  width: 25%;
-}
-
-.posts-grid .post-panel:first-child:nth-last-child(15),
-.posts-grid .post-panel:first-child:nth-last-child(15) ~ * {
-  width: 25%;
-}
-
-.posts-grid .post-panel:first-child:nth-last-child(16),
-.posts-grid .post-panel:first-child:nth-last-child(16) ~ * {
-  width: 25%;
-}
-
-.posts-grid .post-panel:first-child:nth-last-child(17),
-.posts-grid .post-panel:first-child:nth-last-child(17) ~ * {
-  width: 25%;
-}
-
-.posts-grid .post-panel:first-child:nth-last-child(18),
-.posts-grid .post-panel:first-child:nth-last-child(18) ~ * {
-  width: 25%;
-}
-
-.posts-grid .post-panel:first-child:nth-last-child(19),
-.posts-grid .post-panel:first-child:nth-last-child(19) ~ * {
-  width: 25%;
-}
-
-.posts-grid .post-panel:first-child:nth-last-child(20),
-.posts-grid .post-panel:first-child:nth-last-child(20) ~ * {
-  width: 25%;
-}
-
-.posts-grid .post-panel:first-child:nth-last-child(21),
-.posts-grid .post-panel:first-child:nth-last-child(21) ~ * {
-  width: 25%;
-}
-
-.posts-grid .post-panel:first-child:nth-last-child(22),
-.posts-grid .post-panel:first-child:nth-last-child(22) ~ * {
-  width: 25%;
-}
-
-.posts-grid .post-panel:first-child:nth-last-child(23),
-.posts-grid .post-panel:first-child:nth-last-child(23) ~ * {
-  width: 25%;
-}
-
-.posts-grid .post-panel:first-child:nth-last-child(24),
-.posts-grid .post-panel:first-child:nth-last-child(24) ~ * {
-  width: 25%;
-}
-
-.posts-grid .post-panel:first-child:not(:last-child) {
-  margin-right: 1rem;
-}
-
-.posts-grid .post-panel:last-child:not(:first-child) {
-  margin-left: 1rem;
-}
-
-.posts-grid .post-panel:not(:first-child):not(:last-child) {
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 .posts-grid .post-panel:focus {
@@ -9309,47 +7549,253 @@ h1.page-title {
     width: auto;
   }
 
-  .home .hero-banner {
-    margin-top: -6rem;
+  .posts-grid .post-panel-wrapper:nth-child(1) a {
+    -webkit-transform: rotate(-5deg) translate(0, 16px);
+    transform: rotate(-5deg) translate(0, 16px);
   }
 
-  .hero-banner-wrapper {
-    -webkit-filter: drop-shadow(0 3px 3px #687274);
-    filter: drop-shadow(0 3px 3px #687274);
+  .posts-grid .post-panel-wrapper:nth-child(1) a:hover {
+    -webkit-transform: rotate(calc(-5deg + 1deg)) translate(0, calc(16px - 3px));
+    transform: rotate(calc(-5deg + 1deg)) translate(0, calc(16px - 3px));
   }
 
-  .hero-banner-wrapper > div:first-child,
-  .hero-banner-wrapper form {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+  .posts-grid .post-panel-wrapper:nth-child(2) a {
+    -webkit-transform: rotate(4deg) translate(0, -20px);
+    transform: rotate(4deg) translate(0, -20px);
   }
 
-  .hero-banner-wrapper .hero-banner {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 8rem;
-    min-height: 600px;
-    padding: 8rem 4rem;
+  .posts-grid .post-panel-wrapper:nth-child(2) a:hover {
+    -webkit-transform: rotate(calc(4deg + 1deg)) translate(0, calc(-20px - 3px));
+    transform: rotate(calc(4deg + 1deg)) translate(0, calc(-20px - 3px));
   }
 
-  .hero-banner-wrapper .hero-banner h1 {
-    text-align: center;
-    color: #fff;
-    font-size: 4rem;
-    font-weight: 700;
-    margin-bottom: 4rem;
+  .posts-grid .post-panel-wrapper:nth-child(3) a {
+    -webkit-transform: rotate(-2deg) translate(0, 16px);
+    transform: rotate(-2deg) translate(0, 16px);
   }
 
-  .hero-banner-wrapper .hero-banner .banner-text {
-    text-align: center;
-    color: #fff;
-    font-size: 2rem;
-    margin-bottom: 3rem;
+  .posts-grid .post-panel-wrapper:nth-child(3) a:hover {
+    -webkit-transform: rotate(calc(-2deg + 1deg)) translate(0, calc(16px - 3px));
+    transform: rotate(calc(-2deg + 1deg)) translate(0, calc(16px - 3px));
   }
 
-  .hero-banner-wrapper .hero-banner .button-wrapper {
-    text-align: center;
+  .posts-grid .post-panel-wrapper:nth-child(4) a {
+    -webkit-transform: rotate(6deg) translate(0, 16px);
+    transform: rotate(6deg) translate(0, 16px);
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(4) a:hover {
+    -webkit-transform: rotate(calc(6deg + 1deg)) translate(0, calc(16px - 3px));
+    transform: rotate(calc(6deg + 1deg)) translate(0, calc(16px - 3px));
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(5) a {
+    -webkit-transform: rotate(3deg) translate(0, -20px);
+    transform: rotate(3deg) translate(0, -20px);
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(5) a:hover {
+    -webkit-transform: rotate(calc(3deg + 1deg)) translate(0, calc(-20px - 3px));
+    transform: rotate(calc(3deg + 1deg)) translate(0, calc(-20px - 3px));
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(6) a {
+    -webkit-transform: rotate(-5deg) translate(0, 16px);
+    transform: rotate(-5deg) translate(0, 16px);
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(6) a:hover {
+    -webkit-transform: rotate(calc(-5deg + 1deg)) translate(0, calc(16px - 3px));
+    transform: rotate(calc(-5deg + 1deg)) translate(0, calc(16px - 3px));
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(7) a {
+    -webkit-transform: rotate(4deg) translate(0, 16px);
+    transform: rotate(4deg) translate(0, 16px);
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(7) a:hover {
+    -webkit-transform: rotate(calc(4deg + 1deg)) translate(0, calc(16px - 3px));
+    transform: rotate(calc(4deg + 1deg)) translate(0, calc(16px - 3px));
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(8) a {
+    -webkit-transform: rotate(-2deg) translate(0, -20px);
+    transform: rotate(-2deg) translate(0, -20px);
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(8) a:hover {
+    -webkit-transform: rotate(calc(-2deg + 1deg)) translate(0, calc(-20px - 3px));
+    transform: rotate(calc(-2deg + 1deg)) translate(0, calc(-20px - 3px));
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(9) a {
+    -webkit-transform: rotate(6deg) translate(0, 16px);
+    transform: rotate(6deg) translate(0, 16px);
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(9) a:hover {
+    -webkit-transform: rotate(calc(6deg + 1deg)) translate(0, calc(16px - 3px));
+    transform: rotate(calc(6deg + 1deg)) translate(0, calc(16px - 3px));
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(10) a {
+    -webkit-transform: rotate(3deg) translate(0, 16px);
+    transform: rotate(3deg) translate(0, 16px);
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(10) a:hover {
+    -webkit-transform: rotate(calc(3deg + 1deg)) translate(0, calc(16px - 3px));
+    transform: rotate(calc(3deg + 1deg)) translate(0, calc(16px - 3px));
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(11) a {
+    -webkit-transform: rotate(-5deg) translate(0, -20px);
+    transform: rotate(-5deg) translate(0, -20px);
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(11) a:hover {
+    -webkit-transform: rotate(calc(-5deg + 1deg)) translate(0, calc(-20px - 3px));
+    transform: rotate(calc(-5deg + 1deg)) translate(0, calc(-20px - 3px));
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(12) a {
+    -webkit-transform: rotate(4deg) translate(0, 16px);
+    transform: rotate(4deg) translate(0, 16px);
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(12) a:hover {
+    -webkit-transform: rotate(calc(4deg + 1deg)) translate(0, calc(16px - 3px));
+    transform: rotate(calc(4deg + 1deg)) translate(0, calc(16px - 3px));
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(13) a {
+    -webkit-transform: rotate(-2deg) translate(0, 16px);
+    transform: rotate(-2deg) translate(0, 16px);
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(13) a:hover {
+    -webkit-transform: rotate(calc(-2deg + 1deg)) translate(0, calc(16px - 3px));
+    transform: rotate(calc(-2deg + 1deg)) translate(0, calc(16px - 3px));
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(14) a {
+    -webkit-transform: rotate(6deg) translate(0, -20px);
+    transform: rotate(6deg) translate(0, -20px);
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(14) a:hover {
+    -webkit-transform: rotate(calc(6deg + 1deg)) translate(0, calc(-20px - 3px));
+    transform: rotate(calc(6deg + 1deg)) translate(0, calc(-20px - 3px));
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(15) a {
+    -webkit-transform: rotate(3deg) translate(0, 16px);
+    transform: rotate(3deg) translate(0, 16px);
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(15) a:hover {
+    -webkit-transform: rotate(calc(3deg + 1deg)) translate(0, calc(16px - 3px));
+    transform: rotate(calc(3deg + 1deg)) translate(0, calc(16px - 3px));
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(16) a {
+    -webkit-transform: rotate(-5deg) translate(0, 16px);
+    transform: rotate(-5deg) translate(0, 16px);
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(16) a:hover {
+    -webkit-transform: rotate(calc(-5deg + 1deg)) translate(0, calc(16px - 3px));
+    transform: rotate(calc(-5deg + 1deg)) translate(0, calc(16px - 3px));
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(17) a {
+    -webkit-transform: rotate(4deg) translate(0, -20px);
+    transform: rotate(4deg) translate(0, -20px);
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(17) a:hover {
+    -webkit-transform: rotate(calc(4deg + 1deg)) translate(0, calc(-20px - 3px));
+    transform: rotate(calc(4deg + 1deg)) translate(0, calc(-20px - 3px));
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(18) a {
+    -webkit-transform: rotate(-2deg) translate(0, 16px);
+    transform: rotate(-2deg) translate(0, 16px);
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(18) a:hover {
+    -webkit-transform: rotate(calc(-2deg + 1deg)) translate(0, calc(16px - 3px));
+    transform: rotate(calc(-2deg + 1deg)) translate(0, calc(16px - 3px));
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(19) a {
+    -webkit-transform: rotate(6deg) translate(0, 16px);
+    transform: rotate(6deg) translate(0, 16px);
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(19) a:hover {
+    -webkit-transform: rotate(calc(6deg + 1deg)) translate(0, calc(16px - 3px));
+    transform: rotate(calc(6deg + 1deg)) translate(0, calc(16px - 3px));
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(20) a {
+    -webkit-transform: rotate(3deg) translate(0, -20px);
+    transform: rotate(3deg) translate(0, -20px);
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(20) a:hover {
+    -webkit-transform: rotate(calc(3deg + 1deg)) translate(0, calc(-20px - 3px));
+    transform: rotate(calc(3deg + 1deg)) translate(0, calc(-20px - 3px));
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(21) a {
+    -webkit-transform: rotate(-5deg) translate(0, 16px);
+    transform: rotate(-5deg) translate(0, 16px);
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(21) a:hover {
+    -webkit-transform: rotate(calc(-5deg + 1deg)) translate(0, calc(16px - 3px));
+    transform: rotate(calc(-5deg + 1deg)) translate(0, calc(16px - 3px));
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(22) a {
+    -webkit-transform: rotate(4deg) translate(0, 16px);
+    transform: rotate(4deg) translate(0, 16px);
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(22) a:hover {
+    -webkit-transform: rotate(calc(4deg + 1deg)) translate(0, calc(16px - 3px));
+    transform: rotate(calc(4deg + 1deg)) translate(0, calc(16px - 3px));
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(23) a {
+    -webkit-transform: rotate(-2deg) translate(0, -20px);
+    transform: rotate(-2deg) translate(0, -20px);
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(23) a:hover {
+    -webkit-transform: rotate(calc(-2deg + 1deg)) translate(0, calc(-20px - 3px));
+    transform: rotate(calc(-2deg + 1deg)) translate(0, calc(-20px - 3px));
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(24) a {
+    -webkit-transform: rotate(6deg) translate(0, 16px);
+    transform: rotate(6deg) translate(0, 16px);
+  }
+
+  .posts-grid .post-panel-wrapper:nth-child(24) a:hover {
+    -webkit-transform: rotate(calc(6deg + 1deg)) translate(0, calc(16px - 3px));
+    transform: rotate(calc(6deg + 1deg)) translate(0, calc(16px - 3px));
+  }
+
+  .posts-grid .post-panel-wrapper {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: left;
+    padding-left: 2.08333%;
+    padding-right: 2.08333%;
   }
 }
 
