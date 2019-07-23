@@ -266,8 +266,7 @@ class Foodie_Japan_Woocommerce extends WC_Bookings_Data {
               </div>
             </div>
             <div id="tour-overview" class="tour-content toggle">
-              <?php // the_field('description'); ?>
-              <pre>qwer</pre>
+              <?php the_field('description'); ?>
             </div>
           </div>
         </div>

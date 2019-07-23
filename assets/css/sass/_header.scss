@@ -25,7 +25,7 @@
 
   .header-bottom {
     @include sloped-bottom(50, 'right', 'deep');
-    margin-top: -5px;
+    margin-top: (-$spacing-tiny);
 
     > div:first-child {
       background-color: $brand-primary-dark;

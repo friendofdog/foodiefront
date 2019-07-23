@@ -31,8 +31,10 @@ $step  = isset( $field['step'] ) ? $field['step'] : null;
 <div class="form-field form-field-wide full-width <?php echo implode( ' ', $class ); ?>">
   <div class="full-width">
   	<label for="<?php echo $name; ?>">
-      <?php echo $label; ?>:<br>
-      <span class="person-description"><?php echo ( ! empty( $after ) ) ? $after : ''; ?></span>
+      <?php echo $label; ?>:
+			<span class="tooltip"><i class="fas fa-info-circle"></i>
+			  <span class="tooltip-text"><?php echo ( ! empty( $after ) ) ? $after : ''; ?></span>
+			</span>
     </label>
   	<input
   		type="number"

@@ -42,9 +42,28 @@
       display: flex;
     }
 
-    .person-description {
-      color: $black;
-      font-size: .9rem;
+    .tooltip {
+      margin-left: $spacing-tiny;
+      position: relative;
+
+      .tooltip-text {
+        @include border-radius-all;
+        background-color: $white;
+        left: 50%;
+        margin-left: -60px;
+        padding: $spacing-tiny;
+        position: absolute;
+        top: 100%;
+        visibility: hidden;
+        width: 120px;
+        z-index: 1;
+      }
+
+      &:hover {
+        .tooltip-text {
+          visibility: visible;
+        }
+      }
     }
 
     input {
@@ -229,7 +248,7 @@
 
           .product-photo {
             @include polaroid;
-            border: 5px solid $polaroid;
+            border: $spacing-tiny solid $polaroid;
             margin: auto;
             padding: 2px 3px;
             width: 80%;
@@ -251,12 +270,15 @@
         }
       }
     }
+  }
+}
 
-    .related.products {
-      .type-product {
-        a:focus {
-          outline: none;
-        }
+@include susy-media($desktop) {
+  .storefront-full-width-content.single-product {
+    div.product {
+      .summary {
+        float: none;
+        margin: 0 auto $base-spacing;
       }
     }
   }

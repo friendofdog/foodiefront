@@ -4688,9 +4688,26 @@ h1.page-title {
   display: flex;
 }
 
-.wc-bookings-booking-form .form-field .person-description {
-  color: #333;
-  font-size: .9rem;
+.wc-bookings-booking-form .form-field .tooltip {
+  margin-left: 0.25rem;
+  position: relative;
+}
+
+.wc-bookings-booking-form .form-field .tooltip .tooltip-text {
+  border-radius: 0.25rem;
+  background-color: #fff;
+  left: 50%;
+  margin-left: -60px;
+  padding: 0.25rem;
+  position: absolute;
+  top: 100%;
+  visibility: hidden;
+  width: 120px;
+  z-index: 1;
+}
+
+.wc-bookings-booking-form .form-field .tooltip:hover .tooltip-text {
+  visibility: visible;
 }
 
 .wc-bookings-booking-form .form-field input[type] {
@@ -4741,7 +4758,7 @@ h1.page-title {
 
 .storefront-full-width-content.single-product div.product .tour-header {
   text-shadow: 1px 1px #687274;
-  border-radius: 5px 5px 0 0;
+  border-radius: 0.25rem 0.25rem 0 0;
   background-color: #b530f0;
   -webkit-box-shadow: 0 3px 3px #687274;
   box-shadow: 0 3px 3px #687274;
@@ -4755,7 +4772,7 @@ h1.page-title {
 }
 
 .storefront-full-width-content.single-product div.product .tour-switcher-wrapper .tour-switcher {
-  border-radius: 5px 5px 0 0;
+  border-radius: 0.25rem 0.25rem 0 0;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4799,7 +4816,7 @@ h1.page-title {
 .storefront-full-width-content.single-product div.product .product-tour-wrapper .product-tour {
   -webkit-box-shadow: 1px 2px 7px #687274;
   box-shadow: 1px 2px 7px #687274;
-  border-radius: 5px;
+  border-radius: 0.25rem;
   background-color: #fff;
   margin-bottom: 2rem;
   padding: 1rem;
@@ -4900,7 +4917,7 @@ h1.page-title {
   -webkit-box-shadow: 1px 2px 7px #687274;
   box-shadow: 1px 2px 7px #687274;
   background: #f1f1f1;
-  border: 5px solid #f1f1f1;
+  border: 0.25rem solid #f1f1f1;
   margin: auto;
   padding: 2px 3px;
   width: 80%;
@@ -4918,10 +4935,6 @@ h1.page-title {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-.storefront-full-width-content.single-product div.product .related.products .type-product a:focus {
-  outline: none;
 }
 
 .home.blog .site-header,
@@ -7151,7 +7164,7 @@ h1.page-title {
 }
 
 .primary-button {
-  border-radius: 5px;
+  border-radius: 0.25rem;
   margin: 0 0.5rem;
   padding: 1rem 2rem;
 }
@@ -9162,6 +9175,11 @@ h1.page-title {
     margin-right: 2rem;
   }
 
+  .storefront-full-width-content.single-product div.product .summary {
+    float: none;
+    margin: 0 auto 2rem;
+  }
+
   .home.blog .site-header,
   .home.page:not(.page-template-template-homepage) .site-header,
   .home.post-type-archive-product .site-header {
@@ -9171,7 +9189,7 @@ h1.page-title {
   .header-bottom {
     -webkit-filter: drop-shadow(0 7px 3px #687274);
     filter: drop-shadow(0 7px 3px #687274);
-    margin-top: -5px;
+    margin-top: -0.25rem;
   }
 
   .header-bottom > div:first-child,

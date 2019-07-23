@@ -21,16 +21,16 @@
   transition: transform $transition-normal, clip-path $transition-normal;
 }
 
-@mixin shadow-border-bottom {
-  box-shadow: 0 0 10px 5px $brand-primary-dark;
-}
-
 @mixin border-radius-all {
-  border-radius: $border-radius;
+  border-radius: $spacing-tiny;
 }
 
 @mixin border-radius-top {
-  border-radius: $border-radius $border-radius 0 0;
+  border-radius: $spacing-tiny $spacing-tiny 0 0;
+}
+
+@mixin shadow-border-bottom {
+  box-shadow: 0 0 10px 5px $brand-primary-dark;
 }
 
 @mixin box-shadow {
