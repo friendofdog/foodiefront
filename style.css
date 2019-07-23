@@ -4843,16 +4843,15 @@ h1.page-title {
 .storefront-full-width-content.single-product div.product .product-tour-wrapper .product-tour .tour-content-wrapper .tour-content {
   float: left;
   height: auto;
-  max-height: 1000px;
   overflow: hidden;
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
   -webkit-transform-origin: top;
   transform-origin: top;
-  -webkit-transition: max-height 500ms ease-out, -webkit-transform 500ms ease-out;
-  transition: max-height 500ms ease-out, -webkit-transform 500ms ease-out;
-  transition: transform 500ms ease-out, max-height 500ms ease-out;
-  transition: transform 500ms ease-out, max-height 500ms ease-out, -webkit-transform 500ms ease-out;
+  -webkit-transition: -webkit-transform 500ms ease-out;
+  transition: -webkit-transform 500ms ease-out;
+  transition: transform 500ms ease-out;
+  transition: transform 500ms ease-out, -webkit-transform 500ms ease-out;
   width: 100%;
 }
 

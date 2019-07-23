@@ -186,11 +186,10 @@
           .tour-content {
             float: left;
             height: auto;
-            max-height: 1000px;
             overflow: hidden;
             transform: scaleY(1);
             transform-origin: top;
-            transition: transform $transition-slow ease-out, max-height $transition-slow ease-out;
+            transition: transform $transition-slow ease-out;
             width: 100%;
           }
         }
