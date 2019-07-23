@@ -22,9 +22,16 @@ $transition-fast:       150ms;
 $transition-normal:     300ms;
 $transition-slow:       500ms;
 
+$border-radius:         5px;
+
 $base-spacing:          2rem;
-$nav-spacing:           $base-spacing / 2;
+$spacing-huge:          $base-spacing * 5;
+$spacing-double:        $base-spacing * 2;
+$spacing-onehalf:       $base-spacing * 1.5;
+$spacing-half:          $base-spacing / 2;
+$spacing-third:         $base-spacing / 3;
+$spacing-qtr:           $base-spacing / 4;
 
 // Siteorigin
-$row-bottom:            $base-spacing * 2;
+$row-bottom:            $spacing-double;
 $row-bottom-desktop:    $base-spacing * 3;

@@ -4741,8 +4741,8 @@ h1.page-title {
 
 .storefront-full-width-content.single-product div.product .tour-header {
   text-shadow: 1px 1px #687274;
-  background-color: #b530f0;
   border-radius: 5px 5px 0 0;
+  background-color: #b530f0;
   -webkit-box-shadow: 0 3px 3px #687274;
   box-shadow: 0 3px 3px #687274;
   color: #fff;
@@ -4779,7 +4779,7 @@ h1.page-title {
   display: inline-block;
   opacity: .8;
   outline: none;
-  padding: 1.5rem;
+  padding: 2rem;
   text-align: center;
 }
 
@@ -4799,8 +4799,8 @@ h1.page-title {
 .storefront-full-width-content.single-product div.product .product-tour-wrapper .product-tour {
   -webkit-box-shadow: 1px 2px 7px #687274;
   box-shadow: 1px 2px 7px #687274;
-  background-color: #fff;
   border-radius: 5px;
+  background-color: #fff;
   margin-bottom: 2rem;
   padding: 1rem;
 }
@@ -9165,7 +9165,7 @@ h1.page-title {
   .home.blog .site-header,
   .home.page:not(.page-template-template-homepage) .site-header,
   .home.post-type-archive-product .site-header {
-    margin-bottom: 4.2rem;
+    margin-bottom: 4rem;
   }
 
   .header-bottom {

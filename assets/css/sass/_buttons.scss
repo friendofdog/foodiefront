@@ -1,12 +1,12 @@
 .primary-button {
-  border-radius: 5px;
-  margin: 0 $base-spacing / 4;
-  padding: $base-spacing / 2 $base-spacing;
+  @include border-radius-all;
+  margin: 0 $spacing-qtr;
+  padding: $spacing-half $base-spacing;
 }
 
 .nav-button {
   float: right;
-  margin: $nav-spacing * .6 0;
+  margin: ($spacing-half * .6) 0;
 
   a {
     padding: 0 !important;
