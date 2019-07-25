@@ -4602,6 +4602,10 @@ ul.bxslider {
   padding: 10px;
 }
 
+.site {
+  overflow: visible;
+}
+
 .full-width {
   display: inline-block;
   width: 100%;
@@ -4651,6 +4655,7 @@ h1.page-title {
 
 .wc-bookings-date-picker {
   background-color: #fff;
+  padding: 0 0.5rem;
 }
 
 .wc-bookings-date-picker .ui-datepicker td.bookable a {
@@ -4662,12 +4667,24 @@ h1.page-title {
   background: #9e10dd !important;
 }
 
+.wc-bookings-date-picker .ui-datepicker td .ui-state-default {
+  padding: 0.5rem 0;
+}
+
+.wc-bookings-booking-form {
+  margin: 0;
+}
+
+.wc-bookings-booking-form fieldset {
+  margin: 0;
+}
+
 .wc-bookings-booking-form label {
   margin-right: 0.5rem;
 }
 
 .wc-bookings-booking-form .block-picker {
-  margin: 0 0 1rem;
+  margin: 0;
 }
 
 .wc-bookings-booking-form .block-picker li a.selected,
@@ -4717,38 +4734,47 @@ h1.page-title {
   width: auto;
 }
 
+.product-content-wrapper {
+  display: inline-block;
+}
+
+.storefront-full-width-content.single-product div.product {
+  overflow: visible;
+}
+
 .storefront-full-width-content.single-product div.product .product-main-wrapper,
 .storefront-full-width-content.single-product div.product .summary {
   margin-bottom: 2rem;
 }
 
-.storefront-full-width-content.single-product div.product .entry-summary {
+.storefront-full-width-content.single-product div.product .summary-wrapper-inner {
   -webkit-filter: drop-shadow(0 3px 3px #687274);
   filter: drop-shadow(0 3px 3px #687274);
   padding: 0.5rem;
 }
 
-.storefront-full-width-content.single-product div.product .entry-summary > div:first-child,
-.storefront-full-width-content.single-product div.product .entry-summary form {
+.storefront-full-width-content.single-product div.product .summary-wrapper-inner > div:first-child,
+.storefront-full-width-content.single-product div.product .summary-wrapper-inner form {
   -webkit-clip-path: polygon(2% 1%, 98% 0, 100% 100%, 0 100%);
   clip-path: polygon(2% 1%, 98% 0, 100% 100%, 0 100%);
 }
 
-.storefront-full-width-content.single-product div.product .entry-summary .cart {
+.storefront-full-width-content.single-product div.product .summary-wrapper-inner .cart {
   background-color: #3ed7e0;
   color: #333;
+  margin-bottom: 0;
   padding: 1rem;
 }
 
-.storefront-full-width-content.single-product div.product .entry-summary .cart .ui-datepicker-calendar {
+.storefront-full-width-content.single-product div.product .summary-wrapper-inner .cart .ui-datepicker-calendar {
   background-color: #fff;
 }
 
-.storefront-full-width-content.single-product div.product .entry-summary .cart .wc-bookings-date-picker {
+.storefront-full-width-content.single-product div.product .summary-wrapper-inner .cart .wc-bookings-date-picker {
   background-color: #3ed7e0;
 }
 
-.storefront-full-width-content.single-product div.product .entry-summary .cart .wc-bookings-booking-form-button {
+.storefront-full-width-content.single-product div.product .summary-wrapper-inner .cart .wc-bookings-booking-form-button {
   background-color: #b530f0;
   border-color: #b530f0;
   color: #333;
@@ -4875,11 +4901,11 @@ h1.page-title {
 }
 
 .storefront-full-width-content.single-product div.product .bx-wrapper .bx-viewport .product-slider {
-  margin: 0 0 1.41575em;
+  margin: 0 0 1rem;
 }
 
 .storefront-full-width-content.single-product div.product .bx-wrapper .bx-viewport .product-slider li {
-  padding: 2rem;
+  padding: 0.5rem;
 }
 
 .storefront-full-width-content.single-product div.product .bx-wrapper .bx-viewport .product-slider li:nth-child(4n-1) {
@@ -7414,9 +7440,18 @@ h1.page-title {
     margin-right: 2rem;
   }
 
-  .storefront-full-width-content.single-product div.product .summary {
+  .storefront-full-width-content.single-product div.product .bx-wrapper .bx-viewport .product-slider li {
+    padding: 2rem;
+  }
+
+  .storefront-full-width-content.single-product div.product .summary-wrapper {
     float: none;
     margin: 0 auto 2rem;
+  }
+
+  .storefront-full-width-content.single-product div.product .summary {
+    margin-bottom: 2rem;
+    width: 100%;
   }
 
   .home.blog .site-header,
@@ -7805,10 +7840,13 @@ h1.page-title {
     margin-right: 4.34783%;
   }
 
-  .storefront-full-width-content.single-product div.product .entry-summary {
+  .storefront-full-width-content.single-product div.product .summary-wrapper {
     width: 30.43478%;
     float: right;
     margin-right: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
   }
 }
 

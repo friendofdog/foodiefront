@@ -26,6 +26,7 @@
     "browser-sync": "2.26.7",
     "gulp": "4.0.2",
     "gulp-concat": "2.6.1",
+    "gulp-eslint": "6.0.0",
     "gulp-group-css-media-queries": "1.2.2",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "8.0.0",
@@ -36,7 +37,5 @@
     "susy": "2.2.14",
     "uglify-es": "3.3.9"
   },
-  "dependencies": {
-    "gulp-eslint": "6.0.0"
-  }
+  "dependencies": {}
 }

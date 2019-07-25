@@ -30,8 +30,9 @@ class Foodie_Japan_Woocommerce extends WC_Bookings_Data {
     add_filter( 'booking_form_fields', array( $this, 'custom_order_booking_fields') );
 
     add_action( 'wp_footer', array( $this, 'hide_empty_cart' ) );
-    add_action( 'woocommerce_before_single_product_summary', array( $this, 'create_product_page_header'), 10 );
+    add_action( 'woocommerce_before_single_product_summary', array( $this, 'create_product_page_before_content'), 10 );
     add_action( 'woocommerce_before_single_product_summary', array( $this, 'create_product_main_content'), 20 );
+    add_action( 'woocommerce_after_single_product_summary', array( $this, 'create_product_page_after_content'), 10 );
     add_action( 'product_main_content', array( $this, 'product_images_slider'), 10 );
     add_action( 'product_main_content', array( $this, 'create_product_tour_details'), 20 );
   }
@@ -93,9 +94,20 @@ class Foodie_Japan_Woocommerce extends WC_Bookings_Data {
    * Product page header
    * @return string
    */
-  public function create_product_page_header() {
+  public function create_product_page_before_content() {
     ?>
-      <h1 class="page-title"><?php the_title(); ?></h1>
+    <h1 class="page-title"><?php the_title(); ?></h1>
+    <div id="product-content-wrapper" class="product-content-wrapper">
+    <?php
+  }
+
+  /**
+   * Product page header
+   * @return string
+   */
+  public function create_product_page_after_content() {
+    ?>
+    </div></div></div>
     <?php
   }
 
@@ -282,10 +294,9 @@ class Foodie_Japan_Woocommerce extends WC_Bookings_Data {
   public function create_product_main_content() {
     ?>
     <div class="product-main-wrapper">
-      <div class="product-main-content">
-        <?php do_action('product_main_content'); ?>
-      </div>
+      <?php do_action('product_main_content'); ?>
     </div>
+    <div class="summary-wrapper"><div class="summary-wrapper-inner">
     <?php
   }
 

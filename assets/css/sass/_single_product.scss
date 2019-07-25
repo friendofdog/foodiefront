@@ -1,6 +1,7 @@
 // WooCommerce overwrites
 .wc-bookings-date-picker {
   background-color: $white;
+  padding: 0 $spacing-qtr;
 
   .ui-datepicker {
     td.bookable {
@@ -13,16 +14,28 @@
     td.bookable-range .ui-state-default {
       background: $brand-secondary-dark !important;
     }
+
+    td {
+      .ui-state-default {
+        padding: $spacing-qtr 0;
+      }
+    }
   }
 }
 
 .wc-bookings-booking-form {
+  margin: 0;
+
+  fieldset {
+    margin: 0;
+  }
+
   label {
     margin-right: $spacing-qtr;
   }
 
   .block-picker {
-    margin: 0 0 $spacing-half;
+    margin: 0;
 
     li {
       a.selected,
@@ -78,20 +91,27 @@
 }
 
 // custom styling
+.product-content-wrapper {
+  display: inline-block;
+}
+
 .storefront-full-width-content.single-product {
   div.product {
+    overflow: visible;
+
     .product-main-wrapper,
     .summary {
       margin-bottom: $base-spacing;
     }
 
-    .entry-summary {
+    .summary-wrapper-inner {
       @include sloped-bottom(2, 'trapezoid', 'shallow');
       padding: $spacing-qtr;
 
       .cart {
         background-color: $brand-primary;
         color: $black;
+        margin-bottom: 0;
         padding: $spacing-half;
 
         .ui-datepicker-calendar {
@@ -215,10 +235,13 @@
 
       .bx-viewport {
         .product-slider {
-          margin: 0 0 1.41575em;
+          margin: 0 0 $spacing-half;
 
           li {
-            padding: $base-spacing;
+            @include susy-media($desktop) {
+              padding: $base-spacing;
+            }
+            padding: $spacing-qtr;
 
             &:nth-child(4n-1) {
               transform: rotate(-3deg);
@@ -275,9 +298,14 @@
 @include susy-media($desktop) {
   .storefront-full-width-content.single-product {
     div.product {
-      .summary {
+      .summary-wrapper {
         float: none;
         margin: 0 auto $base-spacing;
+      }
+
+      .summary {
+        margin-bottom: $base-spacing;
+        width: 100%;
       }
     }
   }
@@ -290,8 +318,16 @@
         @include span(8 of 12);
       }
 
-      .entry-summary {
+      .summary-wrapper {
         @include span(last 4 of 12);
+        position: sticky;
+        top: 0;
+
+        // .summary-wrapper-inner {
+        //   height: 100vh;
+        //   position: relative;
+        //   overflow: scroll;
+        // }
       }
     }
   }
