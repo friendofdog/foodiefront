@@ -29,12 +29,28 @@ class Foodie_Japan_Woocommerce extends WC_Bookings_Data {
     add_filter( 'woocommerce_checkout_fields', array( $this, 'override_checkout_fields' ) );
     add_filter( 'booking_form_fields', array( $this, 'custom_order_booking_fields') );
 
+    add_action( 'template_redirect', array( $this, 'disable_woocommerce_css_js' ), 999 );
     add_action( 'wp_footer', array( $this, 'hide_empty_cart' ) );
     add_action( 'woocommerce_before_single_product_summary', array( $this, 'create_product_page_before_content'), 10 );
     add_action( 'woocommerce_before_single_product_summary', array( $this, 'create_product_main_content'), 20 );
     add_action( 'woocommerce_after_single_product_summary', array( $this, 'create_product_page_after_content'), 10 );
     add_action( 'product_main_content', array( $this, 'product_images_slider'), 10 );
     add_action( 'product_main_content', array( $this, 'create_product_tour_details'), 20 );
+  }
+
+  /**
+   * Dequeue WooCommerce assets on all pages except cart and checkout
+   * @param  object $fields
+   * @return object
+   */
+  public function disable_woocommerce_css_js() {
+    if ( function_exists( 'is_woocommerce' ) ) {
+      if ( ! is_woocommerce() && ! is_cart() && ! is_checkout() ) {
+        remove_action( 'wp_enqueue_scripts', [WC_Frontend_Scripts::class, 'load_scripts'] );
+        remove_action( 'wp_print_scripts', [WC_Frontend_Scripts::class, 'localize_printed_scripts'], 5 );
+  	    remove_action( 'wp_print_footer_scripts', [WC_Frontend_Scripts::class, 'localize_printed_scripts'], 5 );
+      }
+    }
   }
 
   /**

@@ -4683,6 +4683,10 @@ h1.page-title {
   margin-right: 0.5rem;
 }
 
+.wc-bookings-booking-form .wc-bookings-booking-cost {
+  margin-bottom: 0.5rem !important;
+}
+
 .wc-bookings-booking-form .block-picker {
   margin: 0;
 }
