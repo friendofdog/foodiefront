@@ -4606,6 +4606,45 @@ ul.bxslider {
   overflow: visible;
 }
 
+.top-link {
+  -webkit-transition: top 300ms, opacity 300ms ease-in-out;
+  transition: top 300ms, opacity 300ms ease-in-out;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f5fafa;
+  border-radius: 50%;
+  bottom: 0;
+  -webkit-box-shadow: 0 0 5px #687274;
+  box-shadow: 0 0 5px #687274;
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 3rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 2rem 2rem 0;
+  padding: 1rem;
+  position: fixed;
+  right: 0;
+  width: 3rem;
+  z-index: 9999;
+}
+
+.top-link:hover {
+  background-color: #d3e9e9;
+}
+
+.top-link:hover svg {
+  fill: #9e10dd;
+}
+
+.top-link:focus {
+  outline: none;
+}
+
 .full-width {
   display: inline-block;
   width: 100%;
@@ -4618,6 +4657,7 @@ h1.page-title {
 
 .hidden {
   opacity: 0 !important;
+  visibility: hidden !important;
 }
 
 .toggle {
@@ -7294,6 +7334,10 @@ h1.page-title {
 
   .admin-bar .storefront-sticky-add-to-cart--slideInDown {
     top: 32px;
+  }
+
+  .top-link {
+    margin: 0 3rem 3rem 0;
   }
 
   h1.page-title {

@@ -30,6 +30,7 @@ class Foodie_Japan_Woocommerce extends WC_Bookings_Data {
     add_filter( 'booking_form_fields', array( $this, 'custom_order_booking_fields') );
 
     add_action( 'template_redirect', array( $this, 'disable_woocommerce_css_js' ), 999 );
+    add_action( 'init', array( $this, 'remove_storefront_handheld_footer_bar' ) );
     add_action( 'wp_footer', array( $this, 'hide_empty_cart' ) );
     add_action( 'woocommerce_before_single_product_summary', array( $this, 'create_product_page_before_content'), 10 );
     add_action( 'woocommerce_before_single_product_summary', array( $this, 'create_product_main_content'), 20 );
@@ -40,7 +41,6 @@ class Foodie_Japan_Woocommerce extends WC_Bookings_Data {
 
   /**
    * Dequeue WooCommerce assets on all pages except cart and checkout
-   * @param  object $fields
    * @return object
    */
   public function disable_woocommerce_css_js() {
@@ -51,6 +51,14 @@ class Foodie_Japan_Woocommerce extends WC_Bookings_Data {
   	    remove_action( 'wp_print_footer_scripts', [WC_Frontend_Scripts::class, 'localize_printed_scripts'], 5 );
       }
     }
+  }
+
+  /**
+   * Remove footer bar
+   * @return object
+   */
+  function remove_storefront_handheld_footer_bar() {
+    remove_action( 'storefront_footer', 'storefront_handheld_footer_bar', 999 );
   }
 
   /**

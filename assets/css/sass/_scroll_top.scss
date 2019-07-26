@@ -1,0 +1,36 @@
+.top-link {
+  @include transition-visibility;
+  align-items: center;
+  background-color: $light-grey;
+  border-radius: 50%;
+  bottom: 0;
+  box-shadow: 0 0 5px $grey;
+  cursor: pointer;
+  display: inline-flex;
+  height: $spacing-onehalf;
+  justify-content: center;
+  margin: 0 $base-spacing $base-spacing 0;
+  padding: $spacing-half;
+  position: fixed;
+  right: 0;
+  width: $spacing-onehalf;
+  z-index: 9999;
+
+  &:hover {
+    background-color: darken($light-grey, 10%);
+
+    svg {
+      fill: $brand-secondary-dark;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+@include susy-media($desktop) {
+  .top-link {
+    margin: 0 $spacing-onehalf $spacing-onehalf 0;
+  }
+}

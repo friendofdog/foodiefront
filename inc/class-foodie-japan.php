@@ -34,6 +34,7 @@ class Foodie_Japan_Site {
     add_action( 'wp_enqueue_scripts', array( $this, 'siteorigin_panels_remove_inline_css'), 11 );
     add_action( 'init', array( $this, 'custom_post_types_init' ) );
     add_action( 'init', array( $this, 'custom_image_size_init' ) );
+    add_action( 'storefront_after_footer', array( $this, 'scroll_to_top' ), 10 );
   }
 
   /**
@@ -113,6 +114,14 @@ class Foodie_Japan_Site {
   public function custom_image_size_init() {
     add_image_size( 'hero-banner', 1800, 600, array( 'center', 'center' ) );
     add_image_size( 'photo-slider', 690, 460, array( 'center', 'center' ) );
+  }
+
+  function scroll_to_top() {
+    ?>
+    <a class="top-link hidden" href="" id="js-top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+    <?php
   }
 }
 
