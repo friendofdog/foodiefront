@@ -26,35 +26,44 @@ class Foodie_Japan_Hero_Banner {
 
   /**
    * Hero header banner inline style
-   * @return void
+   * @return string
    */
   public function hero_header_banner_background() {
+    require_once( 'vendors/aq_resizer.php' );
+
     $image = get_field('background_image');
 
     if ( $image ) :
+      $img_url = wp_get_attachment_url( $image['id'], 'full' );
+      $resize_mobile = aq_resize( $img_url, 800, 600, true );
+      $resize_desktop = aq_resize( $img_url, 1800, 600, true );
+      $img_mobile = $resize_mobile ? $resize_mobile : $img_url;
+      $img_desktop = $resize_desktop ? $resize_desktop : $img_url;
 
-    $image_src = $image['sizes']['hero-banner'];
+      wp_register_style( 'hero-banner-style', false );
+      wp_enqueue_style( 'hero-banner-style' );
+      wp_add_inline_style( 'hero-banner-style', '
+        .hero-banner {
+          background-image: url(' . $img_mobile . ');
+        }
 
-    wp_register_style( 'hero-banner-style', false );
-    wp_enqueue_style( 'hero-banner-style' );
-    wp_add_inline_style( 'hero-banner-style', '
-      .hero-banner {
-        background-image: url(' . $image_src . ');
-      }
-    ' );
-
+        @media (min-width: 768px) {
+          .hero-banner {
+            background-image: url(' . $img_desktop . ');
+          }
+        }
+      ' );
     endif;
   }
 
   /**
    * Hero header banner
-   * @return void
+   * @return string
    */
   public function hero_header_banner_init() {
     $is_active = get_field('is_active');
     $header = get_field('header');
     $text = get_field('text');
-    $image_src = get_field('background_image')['sizes']['hero-banner'];
     $buttons = get_field('buttons');
 
     if ( $is_active ) : ?>

@@ -39,7 +39,7 @@ class Foodie_Japan_Site {
 
   /**
    * Remove sidebar from product page
-   * @return void
+   * @return boolean
    */
   function product_remove_sidebar( $is_active_sidebar, $index ) {
     if( $index !== "sidebar-1" ) {
@@ -112,11 +112,14 @@ class Foodie_Japan_Site {
    * @return void
    */
   public function custom_image_size_init() {
-    add_image_size( 'hero-banner', 1800, 600, array( 'center', 'center' ) );
     add_image_size( 'photo-slider', 690, 460, array( 'center', 'center' ) );
   }
 
-  function scroll_to_top() {
+  /**
+   * Back to top
+   * @return string
+   */
+  public function scroll_to_top() {
     ?>
     <a class="top-link hidden" href="" id="js-top">
       <i class="fas fa-chevron-up"></i>
