@@ -20,7 +20,9 @@ class Foodie_Japan_Contact {
    * @since 1.0
    */
   public function __construct() {
-    add_action( 'shortcode_atts_wpcf7', array( $this, 'fj_custom_shortcode_atts_wpcf7_filter' ) );
+    if ( function_exists('wpcf7_add_shortcode') ) {
+      add_action( 'shortcode_atts_wpcf7', array( $this, 'fj_custom_shortcode_atts_wpcf7_filter' ) );
+    }
   }
 
   /**

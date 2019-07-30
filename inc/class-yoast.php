@@ -20,7 +20,9 @@ class Foodie_Japan_Yoast {
    * @since 1.0
    */
   public function __construct() {
-    add_action( 'manage_edit-product_columns', array( $this, 'fj_yoast_admin_remove_columns' ) );
+    if ( function_exists('yoast_breadcrumb') ) {
+      add_action( 'manage_edit-product_columns', array( $this, 'fj_yoast_admin_remove_columns' ) );
+    }
   }
 
   /**
