@@ -21,7 +21,6 @@ class Foodie_Japan_Header {
    */
   public function __construct() {
     add_action( 'wp', array( $this, 'header_adjustments' ) );
-    add_action( 'get_header', array( $this, 'remove_storefront_sidebar' ) );
     add_action( 'widgets_init', array( $this, 'add_preheader_text' ) );
   }
 
@@ -30,40 +29,41 @@ class Foodie_Japan_Header {
    * @return void
    */
   public function header_adjustments() {
-    function preheader_text() {
+    remove_action( 'storefront_header', 'storefront_site_branding', 20);
+    remove_action( 'storefront_header', 'storefront_product_search', 40);
+    remove_action( 'storefront_sidebar', 'storefront_get_sidebar', 10 );
+
+    add_action( 'storefront_header', 'display_preheader_text', 25);
+    add_action( 'storefront_header', 'storefront_site_branding', 45);
+    add_action( 'storefront_header', 'display_header_bottom', 70);
+
+    /**
+     * Render preheader text
+     * @return string
+     */
+    function display_preheader_text() {
       if ( is_active_sidebar( 'preheader_text' ) ) : ?>
-      	<div id="preheader-text" class="preheader-text" role="complementary">
-      		<?php dynamic_sidebar( 'preheader_text' ); ?>
-      	</div>
+        <div id="preheader-text" class="preheader-text" role="complementary">
+          <?php dynamic_sidebar( 'preheader_text' ); ?>
+        </div>
       <?php endif;
     }
 
-    function header_bottom() {
+    /**
+     * Render peader bottom
+     * @return string
+     */
+    function display_header_bottom() {
       ?>
       <div class="header-bottom">
         <div></div>
       </div>
       <?php
     }
-
-    remove_action( 'storefront_header', 'storefront_site_branding', 20);
-    remove_action( 'storefront_header', 'storefront_product_search', 40);
-
-    add_action( 'storefront_header', 'preheader_text', 25);
-    add_action( 'storefront_header', 'storefront_site_branding', 45);
-    add_action( 'storefront_header', 'header_bottom', 70);
   }
 
   /**
-   * Sidebars
-   * @return void
-   */
-  public function remove_storefront_sidebar() {
-    remove_action( 'storefront_sidebar', 'storefront_get_sidebar', 10 );
-  }
-
-  /**
-   * Preheader text
+   * Preheader text widget
    * @return void
    */
   public function add_preheader_text() {

@@ -7560,6 +7560,11 @@ h1.page-title {
     margin-right: 0;
   }
 
+  .storefront-secondary-navigation .site-header .preheader .preheader-text .textwidget > * {
+    margin: 0;
+    padding: 0.25rem 1rem;
+  }
+
   .storefront-secondary-navigation .site-header .preheader .secondary-navigation {
     width: 56.52174%;
     float: right;

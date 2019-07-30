@@ -57,6 +57,11 @@
         .preheader-text {
           @include span(5 or 12);
           @include nav-container;
+
+          .textwidget > * {
+            margin: 0;
+            padding: $spacing-tiny $spacing-half;
+          }
         }
 
         .secondary-navigation {
