@@ -4945,10 +4945,21 @@ h1.page-title {
 }
 
 .storefront-full-width-content.single-product div.product .bx-wrapper .bx-viewport .product-slider {
+  height: 100%;
   margin: 0 0 1rem;
 }
 
 .storefront-full-width-content.single-product div.product .bx-wrapper .bx-viewport .product-slider li {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 0.5rem;
 }
 
@@ -4990,6 +5001,10 @@ h1.page-title {
   margin: auto;
   padding: 2px 3px;
   width: 80%;
+}
+
+.storefront-full-width-content.single-product div.product .bx-wrapper .bx-viewport .product-slider .product-photo img {
+  margin: auto;
 }
 
 .storefront-full-width-content.single-product div.product .bx-wrapper .bx-viewport .product-slider .bx-caption {
