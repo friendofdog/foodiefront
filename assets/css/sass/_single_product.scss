@@ -231,6 +231,7 @@
 
       .bx-next,
       .bx-prev {
+        background: none;
         color: $grey;
         margin-top: 8px;
         text-indent: unset;
@@ -238,6 +239,8 @@
       }
 
       .bx-viewport {
+        height: auto !important;
+
         .product-slider {
           height: 100%;
           margin: 0 0 $spacing-half;
