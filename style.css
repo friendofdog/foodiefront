@@ -4803,22 +4803,31 @@ h1.page-title {
   clip-path: polygon(2% 1%, 98% 0, 100% 100%, 0 100%);
 }
 
-.storefront-full-width-content.single-product div.product .summary-wrapper-inner .cart {
+.storefront-full-width-content.single-product div.product .summary-wrapper-inner .cart,
+.storefront-full-width-content.single-product div.product .summary-wrapper-inner .wpcf7-form {
   background-color: #3ed7e0;
   color: #333;
   margin-bottom: 0;
   padding: 1rem;
 }
 
-.storefront-full-width-content.single-product div.product .summary-wrapper-inner .cart .ui-datepicker-calendar {
+.storefront-full-width-content.single-product div.product .summary-wrapper-inner .cart input,
+.storefront-full-width-content.single-product div.product .summary-wrapper-inner .wpcf7-form input {
+  max-width: 100%;
+}
+
+.storefront-full-width-content.single-product div.product .summary-wrapper-inner .cart .ui-datepicker-calendar,
+.storefront-full-width-content.single-product div.product .summary-wrapper-inner .wpcf7-form .ui-datepicker-calendar {
   background-color: #fff;
 }
 
-.storefront-full-width-content.single-product div.product .summary-wrapper-inner .cart .wc-bookings-date-picker {
+.storefront-full-width-content.single-product div.product .summary-wrapper-inner .cart .wc-bookings-date-picker,
+.storefront-full-width-content.single-product div.product .summary-wrapper-inner .wpcf7-form .wc-bookings-date-picker {
   background-color: #3ed7e0;
 }
 
-.storefront-full-width-content.single-product div.product .summary-wrapper-inner .cart .wc-bookings-booking-form-button {
+.storefront-full-width-content.single-product div.product .summary-wrapper-inner .cart .wc-bookings-booking-form-button,
+.storefront-full-width-content.single-product div.product .summary-wrapper-inner .wpcf7-form .wc-bookings-booking-form-button {
   background-color: #b530f0;
   border-color: #b530f0;
   color: #333;

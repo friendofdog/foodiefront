@@ -112,11 +112,16 @@
       @include sloped-bottom(2, 'trapezoid', 'shallow');
       padding: $spacing-qtr;
 
-      .cart {
+      .cart,
+      .wpcf7-form {
         background-color: $brand-primary;
         color: $black;
         margin-bottom: 0;
         padding: $spacing-half;
+
+        input {
+          max-width: 100%;
+        }
 
         .ui-datepicker-calendar {
           background-color: $white;
@@ -338,12 +343,6 @@
         @include span(last 4 of 12);
         position: sticky;
         top: 0;
-
-        // .summary-wrapper-inner {
-        //   height: 100vh;
-        //   position: relative;
-        //   overflow: scroll;
-        // }
       }
     }
   }

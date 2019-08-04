@@ -41,6 +41,13 @@ class Foodie_Japan_Single_Product extends WC_Bookings_Data {
     	'key' => 'bookings',
     	'title' => 'Bookings',
     	'fields' => array (
+        array (
+          'key' => 'contact_form',
+          'label' => 'Contact form fulfillment',
+          'instructions' => 'Use CF7 shortcode to fulfill by contact form',
+          'name' => 'contact_form',
+          'type' => 'text'
+        ),
     		array (
     			'key' => 'overview',
     			'label' => 'Overview',
