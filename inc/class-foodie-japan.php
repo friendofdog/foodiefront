@@ -32,8 +32,8 @@ class Foodie_Japan_Site {
     add_action( 'wp_enqueue_scripts', array( $this, 'styles_scripts_init' ), 30 );
     add_action( 'wp_enqueue_scripts', array( $this, 'customizer_styling_init' ), 150 );
     add_action( 'wp_enqueue_scripts', array( $this, 'siteorigin_panels_remove_inline_css'), 11 );
-    add_action( 'init', array( $this, 'custom_post_types_init' ) );
     add_action( 'init', array( $this, 'custom_image_size_init' ) );
+    add_action( 'foodiefront_before_content', array( $this, 'blog_page_add_header' ) );
     add_action( 'storefront_after_footer', array( $this, 'scroll_to_top' ), 10 );
   }
 
@@ -89,30 +89,25 @@ class Foodie_Japan_Site {
   }
 
   /**
-   * Custom post types
-   * @return void
-   */
-  public function custom_post_types_init() {
-    $args = array(
-      'public'                => true,
-      // 'taxonomies'            => array( 'category' ),
-      'label'                 => 'Press',
-      'position'              => '20.4',
-      'exclude_from_search'   => false,
-      'menu_icon'             => 'dashicons-megaphone',
-      'has_archive'           => false,
-      'publicly_queryable'    => false,
-      'supports'              => array('page-attributes', 'editor', 'title'),
-    );
-    register_post_type( 'press', $args );
-  }
-
-  /**
    * Image sizes
    * @return void
    */
   public function custom_image_size_init() {
     add_image_size( 'photo-slider', 690, 460, array( 'center', 'center' ) );
+  }
+
+  /**
+   * Blog page header
+   * @return string
+   */
+  public function blog_page_add_header() {
+    if ( 'post' === get_post_type() ) {
+      ?>
+      <header class="page-header">
+        <?php echo single_post_title( '<h1 class="page-title">', '</h1>' ); ?>
+      </header><!-- .page-header -->
+      <?php
+    }
   }
 
   /**

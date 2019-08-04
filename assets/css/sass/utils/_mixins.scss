@@ -124,7 +124,7 @@
     0: 16
   );
 
-  .post-panel-wrapper {
+  .polaroid-panel-wrapper {
     @for $i from 1 through 24 {
       $translate: map-get($transpost, $i % 3);
       $tilt: map-get($rotate, $i % 5);

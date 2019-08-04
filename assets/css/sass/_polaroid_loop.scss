@@ -1,15 +1,15 @@
-.posts-grid {
+.polaroid-grid {
   @include polaroid-grid;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 
-  .post-panel-wrapper {
+  .polaroid-panel-wrapper {
     @include span(6 inside);
   }
 
-  .post-panel {
+  .polaroid-panel {
     @include polaroid;
     display: block;
     margin-bottom: $spacing-half;
@@ -56,8 +56,8 @@
 }
 
 @include susy-media($desktop) {
-  .posts-grid {
-    .post-panel-wrapper {
+  .polaroid-grid {
+    .polaroid-panel-wrapper {
       @include span(4 inside);
     }
   }

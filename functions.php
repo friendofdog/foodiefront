@@ -5,6 +5,7 @@ require_once( 'inc/vendors/class-tgm-plugin-activation.php' );
 require_once( 'inc/vendors/aq_resizer.php' );
 require_once( 'inc/class-plugins.php' );
 require_once( 'inc/class-foodie-japan.php' );
+require_once( 'inc/class-press.php' );
 require_once( 'inc/class-header.php' );
 require_once( 'inc/class-hero-banner.php' );
 require_once( 'inc/class-woocommerce.php' );

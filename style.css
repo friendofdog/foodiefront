@@ -5078,7 +5078,7 @@ h1.page-title {
   text-align: center;
 }
 
-.posts-grid {
+.polaroid-grid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5093,7 +5093,7 @@ h1.page-title {
   justify-content: center;
 }
 
-.posts-grid .post-panel-wrapper:nth-child(1) a {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(1) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
@@ -5102,12 +5102,12 @@ h1.page-title {
   transform: rotate(-5deg);
 }
 
-.posts-grid .post-panel-wrapper:nth-child(1) a:hover {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(1) a:hover {
   -webkit-transform: rotate(calc(-5deg + 1deg));
   transform: rotate(calc(-5deg + 1deg));
 }
 
-.posts-grid .post-panel-wrapper:nth-child(2) a {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(2) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
@@ -5116,12 +5116,12 @@ h1.page-title {
   transform: rotate(4deg);
 }
 
-.posts-grid .post-panel-wrapper:nth-child(2) a:hover {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(2) a:hover {
   -webkit-transform: rotate(calc(4deg + 1deg));
   transform: rotate(calc(4deg + 1deg));
 }
 
-.posts-grid .post-panel-wrapper:nth-child(3) a {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(3) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
@@ -5130,12 +5130,12 @@ h1.page-title {
   transform: rotate(-2deg);
 }
 
-.posts-grid .post-panel-wrapper:nth-child(3) a:hover {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(3) a:hover {
   -webkit-transform: rotate(calc(-2deg + 1deg));
   transform: rotate(calc(-2deg + 1deg));
 }
 
-.posts-grid .post-panel-wrapper:nth-child(4) a {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(4) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
@@ -5144,12 +5144,12 @@ h1.page-title {
   transform: rotate(6deg);
 }
 
-.posts-grid .post-panel-wrapper:nth-child(4) a:hover {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(4) a:hover {
   -webkit-transform: rotate(calc(6deg + 1deg));
   transform: rotate(calc(6deg + 1deg));
 }
 
-.posts-grid .post-panel-wrapper:nth-child(5) a {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(5) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
@@ -5158,12 +5158,12 @@ h1.page-title {
   transform: rotate(3deg);
 }
 
-.posts-grid .post-panel-wrapper:nth-child(5) a:hover {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(5) a:hover {
   -webkit-transform: rotate(calc(3deg + 1deg));
   transform: rotate(calc(3deg + 1deg));
 }
 
-.posts-grid .post-panel-wrapper:nth-child(6) a {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(6) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
@@ -5172,12 +5172,12 @@ h1.page-title {
   transform: rotate(-5deg);
 }
 
-.posts-grid .post-panel-wrapper:nth-child(6) a:hover {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(6) a:hover {
   -webkit-transform: rotate(calc(-5deg + 1deg));
   transform: rotate(calc(-5deg + 1deg));
 }
 
-.posts-grid .post-panel-wrapper:nth-child(7) a {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(7) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
@@ -5186,12 +5186,12 @@ h1.page-title {
   transform: rotate(4deg);
 }
 
-.posts-grid .post-panel-wrapper:nth-child(7) a:hover {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(7) a:hover {
   -webkit-transform: rotate(calc(4deg + 1deg));
   transform: rotate(calc(4deg + 1deg));
 }
 
-.posts-grid .post-panel-wrapper:nth-child(8) a {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(8) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
@@ -5200,12 +5200,12 @@ h1.page-title {
   transform: rotate(-2deg);
 }
 
-.posts-grid .post-panel-wrapper:nth-child(8) a:hover {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(8) a:hover {
   -webkit-transform: rotate(calc(-2deg + 1deg));
   transform: rotate(calc(-2deg + 1deg));
 }
 
-.posts-grid .post-panel-wrapper:nth-child(9) a {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(9) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
@@ -5214,12 +5214,12 @@ h1.page-title {
   transform: rotate(6deg);
 }
 
-.posts-grid .post-panel-wrapper:nth-child(9) a:hover {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(9) a:hover {
   -webkit-transform: rotate(calc(6deg + 1deg));
   transform: rotate(calc(6deg + 1deg));
 }
 
-.posts-grid .post-panel-wrapper:nth-child(10) a {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(10) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
@@ -5228,12 +5228,12 @@ h1.page-title {
   transform: rotate(3deg);
 }
 
-.posts-grid .post-panel-wrapper:nth-child(10) a:hover {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(10) a:hover {
   -webkit-transform: rotate(calc(3deg + 1deg));
   transform: rotate(calc(3deg + 1deg));
 }
 
-.posts-grid .post-panel-wrapper:nth-child(11) a {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(11) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
@@ -5242,12 +5242,12 @@ h1.page-title {
   transform: rotate(-5deg);
 }
 
-.posts-grid .post-panel-wrapper:nth-child(11) a:hover {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(11) a:hover {
   -webkit-transform: rotate(calc(-5deg + 1deg));
   transform: rotate(calc(-5deg + 1deg));
 }
 
-.posts-grid .post-panel-wrapper:nth-child(12) a {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(12) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
@@ -5256,12 +5256,12 @@ h1.page-title {
   transform: rotate(4deg);
 }
 
-.posts-grid .post-panel-wrapper:nth-child(12) a:hover {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(12) a:hover {
   -webkit-transform: rotate(calc(4deg + 1deg));
   transform: rotate(calc(4deg + 1deg));
 }
 
-.posts-grid .post-panel-wrapper:nth-child(13) a {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(13) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
@@ -5270,12 +5270,12 @@ h1.page-title {
   transform: rotate(-2deg);
 }
 
-.posts-grid .post-panel-wrapper:nth-child(13) a:hover {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(13) a:hover {
   -webkit-transform: rotate(calc(-2deg + 1deg));
   transform: rotate(calc(-2deg + 1deg));
 }
 
-.posts-grid .post-panel-wrapper:nth-child(14) a {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(14) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
@@ -5284,12 +5284,12 @@ h1.page-title {
   transform: rotate(6deg);
 }
 
-.posts-grid .post-panel-wrapper:nth-child(14) a:hover {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(14) a:hover {
   -webkit-transform: rotate(calc(6deg + 1deg));
   transform: rotate(calc(6deg + 1deg));
 }
 
-.posts-grid .post-panel-wrapper:nth-child(15) a {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(15) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
@@ -5298,12 +5298,12 @@ h1.page-title {
   transform: rotate(3deg);
 }
 
-.posts-grid .post-panel-wrapper:nth-child(15) a:hover {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(15) a:hover {
   -webkit-transform: rotate(calc(3deg + 1deg));
   transform: rotate(calc(3deg + 1deg));
 }
 
-.posts-grid .post-panel-wrapper:nth-child(16) a {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(16) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
@@ -5312,12 +5312,12 @@ h1.page-title {
   transform: rotate(-5deg);
 }
 
-.posts-grid .post-panel-wrapper:nth-child(16) a:hover {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(16) a:hover {
   -webkit-transform: rotate(calc(-5deg + 1deg));
   transform: rotate(calc(-5deg + 1deg));
 }
 
-.posts-grid .post-panel-wrapper:nth-child(17) a {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(17) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
@@ -5326,12 +5326,12 @@ h1.page-title {
   transform: rotate(4deg);
 }
 
-.posts-grid .post-panel-wrapper:nth-child(17) a:hover {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(17) a:hover {
   -webkit-transform: rotate(calc(4deg + 1deg));
   transform: rotate(calc(4deg + 1deg));
 }
 
-.posts-grid .post-panel-wrapper:nth-child(18) a {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(18) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
@@ -5340,12 +5340,12 @@ h1.page-title {
   transform: rotate(-2deg);
 }
 
-.posts-grid .post-panel-wrapper:nth-child(18) a:hover {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(18) a:hover {
   -webkit-transform: rotate(calc(-2deg + 1deg));
   transform: rotate(calc(-2deg + 1deg));
 }
 
-.posts-grid .post-panel-wrapper:nth-child(19) a {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(19) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
@@ -5354,12 +5354,12 @@ h1.page-title {
   transform: rotate(6deg);
 }
 
-.posts-grid .post-panel-wrapper:nth-child(19) a:hover {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(19) a:hover {
   -webkit-transform: rotate(calc(6deg + 1deg));
   transform: rotate(calc(6deg + 1deg));
 }
 
-.posts-grid .post-panel-wrapper:nth-child(20) a {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(20) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
@@ -5368,12 +5368,12 @@ h1.page-title {
   transform: rotate(3deg);
 }
 
-.posts-grid .post-panel-wrapper:nth-child(20) a:hover {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(20) a:hover {
   -webkit-transform: rotate(calc(3deg + 1deg));
   transform: rotate(calc(3deg + 1deg));
 }
 
-.posts-grid .post-panel-wrapper:nth-child(21) a {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(21) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
@@ -5382,12 +5382,12 @@ h1.page-title {
   transform: rotate(-5deg);
 }
 
-.posts-grid .post-panel-wrapper:nth-child(21) a:hover {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(21) a:hover {
   -webkit-transform: rotate(calc(-5deg + 1deg));
   transform: rotate(calc(-5deg + 1deg));
 }
 
-.posts-grid .post-panel-wrapper:nth-child(22) a {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(22) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
@@ -5396,12 +5396,12 @@ h1.page-title {
   transform: rotate(4deg);
 }
 
-.posts-grid .post-panel-wrapper:nth-child(22) a:hover {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(22) a:hover {
   -webkit-transform: rotate(calc(4deg + 1deg));
   transform: rotate(calc(4deg + 1deg));
 }
 
-.posts-grid .post-panel-wrapper:nth-child(23) a {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(23) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
@@ -5410,12 +5410,12 @@ h1.page-title {
   transform: rotate(-2deg);
 }
 
-.posts-grid .post-panel-wrapper:nth-child(23) a:hover {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(23) a:hover {
   -webkit-transform: rotate(calc(-2deg + 1deg));
   transform: rotate(calc(-2deg + 1deg));
 }
 
-.posts-grid .post-panel-wrapper:nth-child(24) a {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(24) a {
   -webkit-transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: -webkit-transform 300ms, -webkit-clip-path 300ms;
   transition: transform 300ms, clip-path 300ms;
@@ -5424,12 +5424,12 @@ h1.page-title {
   transform: rotate(6deg);
 }
 
-.posts-grid .post-panel-wrapper:nth-child(24) a:hover {
+.polaroid-grid .polaroid-panel-wrapper:nth-child(24) a:hover {
   -webkit-transform: rotate(calc(6deg + 1deg));
   transform: rotate(calc(6deg + 1deg));
 }
 
-.posts-grid .post-panel-wrapper {
+.polaroid-grid .polaroid-panel-wrapper {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 50%;
@@ -5438,7 +5438,7 @@ h1.page-title {
   padding-right: 2.08333%;
 }
 
-.posts-grid .post-panel {
+.polaroid-grid .polaroid-panel {
   -webkit-box-shadow: 1px 2px 7px #687274;
   box-shadow: 1px 2px 7px #687274;
   background: #f1f1f1;
@@ -5449,12 +5449,12 @@ h1.page-title {
   text-decoration: none !important;
 }
 
-.posts-grid .post-panel:focus {
+.polaroid-grid .polaroid-panel:focus {
   -webkit-filter: brightness(95%);
   filter: brightness(95%);
 }
 
-.posts-grid .post-panel .text-wrapper {
+.polaroid-grid .polaroid-panel .text-wrapper {
   background-image: url("./assets/images/polaroid-light.png");
   margin-bottom: -10rem;
   margin-top: -1rem;
@@ -5462,14 +5462,14 @@ h1.page-title {
   padding-top: 1rem;
 }
 
-.posts-grid .post-panel .text-wrapper .text-title {
+.polaroid-grid .polaroid-panel .text-wrapper .text-title {
   text-align: center;
   font-size: 1rem;
   margin-bottom: 0;
   padding: 0 0.66667rem;
 }
 
-.posts-grid .post-panel .text-wrapper .text-title::after {
+.polaroid-grid .polaroid-panel .text-wrapper .text-title::after {
   background: #687274;
   bottom: -2px;
   -webkit-box-shadow: 0 0 5px #687274;
@@ -5481,7 +5481,7 @@ h1.page-title {
   width: 100%;
 }
 
-.posts-grid .post-panel .wp-post-image {
+.polaroid-grid .polaroid-panel .wp-post-image {
   border-radius: 0;
   margin-bottom: 0;
   padding: 0.66667rem;
@@ -7651,247 +7651,247 @@ h1.page-title {
     width: auto;
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(1) a {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(1) a {
     -webkit-transform: rotate(-5deg) translate(0, 16px);
     transform: rotate(-5deg) translate(0, 16px);
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(1) a:hover {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(1) a:hover {
     -webkit-transform: rotate(calc(-5deg + 1deg)) translate(0, calc(16px - 3px));
     transform: rotate(calc(-5deg + 1deg)) translate(0, calc(16px - 3px));
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(2) a {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(2) a {
     -webkit-transform: rotate(4deg) translate(0, -20px);
     transform: rotate(4deg) translate(0, -20px);
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(2) a:hover {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(2) a:hover {
     -webkit-transform: rotate(calc(4deg + 1deg)) translate(0, calc(-20px - 3px));
     transform: rotate(calc(4deg + 1deg)) translate(0, calc(-20px - 3px));
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(3) a {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(3) a {
     -webkit-transform: rotate(-2deg) translate(0, 16px);
     transform: rotate(-2deg) translate(0, 16px);
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(3) a:hover {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(3) a:hover {
     -webkit-transform: rotate(calc(-2deg + 1deg)) translate(0, calc(16px - 3px));
     transform: rotate(calc(-2deg + 1deg)) translate(0, calc(16px - 3px));
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(4) a {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(4) a {
     -webkit-transform: rotate(6deg) translate(0, 16px);
     transform: rotate(6deg) translate(0, 16px);
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(4) a:hover {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(4) a:hover {
     -webkit-transform: rotate(calc(6deg + 1deg)) translate(0, calc(16px - 3px));
     transform: rotate(calc(6deg + 1deg)) translate(0, calc(16px - 3px));
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(5) a {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(5) a {
     -webkit-transform: rotate(3deg) translate(0, -20px);
     transform: rotate(3deg) translate(0, -20px);
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(5) a:hover {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(5) a:hover {
     -webkit-transform: rotate(calc(3deg + 1deg)) translate(0, calc(-20px - 3px));
     transform: rotate(calc(3deg + 1deg)) translate(0, calc(-20px - 3px));
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(6) a {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(6) a {
     -webkit-transform: rotate(-5deg) translate(0, 16px);
     transform: rotate(-5deg) translate(0, 16px);
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(6) a:hover {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(6) a:hover {
     -webkit-transform: rotate(calc(-5deg + 1deg)) translate(0, calc(16px - 3px));
     transform: rotate(calc(-5deg + 1deg)) translate(0, calc(16px - 3px));
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(7) a {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(7) a {
     -webkit-transform: rotate(4deg) translate(0, 16px);
     transform: rotate(4deg) translate(0, 16px);
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(7) a:hover {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(7) a:hover {
     -webkit-transform: rotate(calc(4deg + 1deg)) translate(0, calc(16px - 3px));
     transform: rotate(calc(4deg + 1deg)) translate(0, calc(16px - 3px));
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(8) a {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(8) a {
     -webkit-transform: rotate(-2deg) translate(0, -20px);
     transform: rotate(-2deg) translate(0, -20px);
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(8) a:hover {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(8) a:hover {
     -webkit-transform: rotate(calc(-2deg + 1deg)) translate(0, calc(-20px - 3px));
     transform: rotate(calc(-2deg + 1deg)) translate(0, calc(-20px - 3px));
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(9) a {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(9) a {
     -webkit-transform: rotate(6deg) translate(0, 16px);
     transform: rotate(6deg) translate(0, 16px);
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(9) a:hover {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(9) a:hover {
     -webkit-transform: rotate(calc(6deg + 1deg)) translate(0, calc(16px - 3px));
     transform: rotate(calc(6deg + 1deg)) translate(0, calc(16px - 3px));
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(10) a {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(10) a {
     -webkit-transform: rotate(3deg) translate(0, 16px);
     transform: rotate(3deg) translate(0, 16px);
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(10) a:hover {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(10) a:hover {
     -webkit-transform: rotate(calc(3deg + 1deg)) translate(0, calc(16px - 3px));
     transform: rotate(calc(3deg + 1deg)) translate(0, calc(16px - 3px));
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(11) a {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(11) a {
     -webkit-transform: rotate(-5deg) translate(0, -20px);
     transform: rotate(-5deg) translate(0, -20px);
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(11) a:hover {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(11) a:hover {
     -webkit-transform: rotate(calc(-5deg + 1deg)) translate(0, calc(-20px - 3px));
     transform: rotate(calc(-5deg + 1deg)) translate(0, calc(-20px - 3px));
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(12) a {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(12) a {
     -webkit-transform: rotate(4deg) translate(0, 16px);
     transform: rotate(4deg) translate(0, 16px);
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(12) a:hover {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(12) a:hover {
     -webkit-transform: rotate(calc(4deg + 1deg)) translate(0, calc(16px - 3px));
     transform: rotate(calc(4deg + 1deg)) translate(0, calc(16px - 3px));
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(13) a {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(13) a {
     -webkit-transform: rotate(-2deg) translate(0, 16px);
     transform: rotate(-2deg) translate(0, 16px);
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(13) a:hover {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(13) a:hover {
     -webkit-transform: rotate(calc(-2deg + 1deg)) translate(0, calc(16px - 3px));
     transform: rotate(calc(-2deg + 1deg)) translate(0, calc(16px - 3px));
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(14) a {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(14) a {
     -webkit-transform: rotate(6deg) translate(0, -20px);
     transform: rotate(6deg) translate(0, -20px);
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(14) a:hover {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(14) a:hover {
     -webkit-transform: rotate(calc(6deg + 1deg)) translate(0, calc(-20px - 3px));
     transform: rotate(calc(6deg + 1deg)) translate(0, calc(-20px - 3px));
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(15) a {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(15) a {
     -webkit-transform: rotate(3deg) translate(0, 16px);
     transform: rotate(3deg) translate(0, 16px);
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(15) a:hover {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(15) a:hover {
     -webkit-transform: rotate(calc(3deg + 1deg)) translate(0, calc(16px - 3px));
     transform: rotate(calc(3deg + 1deg)) translate(0, calc(16px - 3px));
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(16) a {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(16) a {
     -webkit-transform: rotate(-5deg) translate(0, 16px);
     transform: rotate(-5deg) translate(0, 16px);
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(16) a:hover {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(16) a:hover {
     -webkit-transform: rotate(calc(-5deg + 1deg)) translate(0, calc(16px - 3px));
     transform: rotate(calc(-5deg + 1deg)) translate(0, calc(16px - 3px));
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(17) a {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(17) a {
     -webkit-transform: rotate(4deg) translate(0, -20px);
     transform: rotate(4deg) translate(0, -20px);
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(17) a:hover {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(17) a:hover {
     -webkit-transform: rotate(calc(4deg + 1deg)) translate(0, calc(-20px - 3px));
     transform: rotate(calc(4deg + 1deg)) translate(0, calc(-20px - 3px));
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(18) a {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(18) a {
     -webkit-transform: rotate(-2deg) translate(0, 16px);
     transform: rotate(-2deg) translate(0, 16px);
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(18) a:hover {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(18) a:hover {
     -webkit-transform: rotate(calc(-2deg + 1deg)) translate(0, calc(16px - 3px));
     transform: rotate(calc(-2deg + 1deg)) translate(0, calc(16px - 3px));
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(19) a {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(19) a {
     -webkit-transform: rotate(6deg) translate(0, 16px);
     transform: rotate(6deg) translate(0, 16px);
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(19) a:hover {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(19) a:hover {
     -webkit-transform: rotate(calc(6deg + 1deg)) translate(0, calc(16px - 3px));
     transform: rotate(calc(6deg + 1deg)) translate(0, calc(16px - 3px));
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(20) a {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(20) a {
     -webkit-transform: rotate(3deg) translate(0, -20px);
     transform: rotate(3deg) translate(0, -20px);
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(20) a:hover {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(20) a:hover {
     -webkit-transform: rotate(calc(3deg + 1deg)) translate(0, calc(-20px - 3px));
     transform: rotate(calc(3deg + 1deg)) translate(0, calc(-20px - 3px));
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(21) a {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(21) a {
     -webkit-transform: rotate(-5deg) translate(0, 16px);
     transform: rotate(-5deg) translate(0, 16px);
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(21) a:hover {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(21) a:hover {
     -webkit-transform: rotate(calc(-5deg + 1deg)) translate(0, calc(16px - 3px));
     transform: rotate(calc(-5deg + 1deg)) translate(0, calc(16px - 3px));
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(22) a {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(22) a {
     -webkit-transform: rotate(4deg) translate(0, 16px);
     transform: rotate(4deg) translate(0, 16px);
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(22) a:hover {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(22) a:hover {
     -webkit-transform: rotate(calc(4deg + 1deg)) translate(0, calc(16px - 3px));
     transform: rotate(calc(4deg + 1deg)) translate(0, calc(16px - 3px));
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(23) a {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(23) a {
     -webkit-transform: rotate(-2deg) translate(0, -20px);
     transform: rotate(-2deg) translate(0, -20px);
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(23) a:hover {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(23) a:hover {
     -webkit-transform: rotate(calc(-2deg + 1deg)) translate(0, calc(-20px - 3px));
     transform: rotate(calc(-2deg + 1deg)) translate(0, calc(-20px - 3px));
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(24) a {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(24) a {
     -webkit-transform: rotate(6deg) translate(0, 16px);
     transform: rotate(6deg) translate(0, 16px);
   }
 
-  .posts-grid .post-panel-wrapper:nth-child(24) a:hover {
+  .polaroid-grid .polaroid-panel-wrapper:nth-child(24) a:hover {
     -webkit-transform: rotate(calc(6deg + 1deg)) translate(0, calc(16px - 3px));
     transform: rotate(calc(6deg + 1deg)) translate(0, calc(16px - 3px));
   }
 
-  .posts-grid .post-panel-wrapper {
+  .polaroid-grid .polaroid-panel-wrapper {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 33.33333%;
